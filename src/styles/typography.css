@@ -12,6 +12,10 @@ body {
   font-kerning: normal;
 }
 
+body.preload {
+  transition: none !important;
+}
+
 ul.list {
   list-style: none;
   padding: 0;
@@ -50,6 +54,7 @@ a.a:hover {
 p {
   opacity: 0.8;
   line-height: 1.5;
+  color: var(--color-light);
 }
 
 p.ingress {

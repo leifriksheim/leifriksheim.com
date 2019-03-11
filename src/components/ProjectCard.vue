@@ -1,17 +1,15 @@
 <template>
-  <div class="project-card">
+  <router-link class="project-card" :to="`/project/${slug}`">
     <div :style="`background-color: ${background}`" class="project-card__img">
       <img :src="url" />
     </div>
     <Block>
       <div class="project-card__content">
-        <p class="p">
-          <span style="font-weight: 500">{{ title }}</span>
-        </p>
+        <h2 class="h5">{{ title }}</h2>
         <p class="p">{{ ingress }}</p>
       </div>
     </Block>
-  </div>
+  </router-link>
 </template>
 
 <script>
@@ -23,7 +21,8 @@ export default {
     background: String,
     url: String,
     title: String,
-    ingress: String
+    ingress: String,
+    slug: String
   }
 };
 </script>
@@ -35,12 +34,15 @@ export default {
   cursor: pointer;
   display: flex;
   flex-direction: row;
+  color: var(--color-lightest);
+  text-decoration: none;
   justify-content: flex-start;
   margin-bottom: var(--space-6);
 }
 
 .project-card__content {
   font-size: 0.9em;
+  padding-top: var(--space-3);
 }
 
 .project-card__img {

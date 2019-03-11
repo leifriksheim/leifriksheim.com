@@ -11,7 +11,12 @@
 import NavBar from "@/components/NavBar";
 
 export default {
-  components: { NavBar }
+  components: { NavBar },
+  created() {
+    window.addEventListener("load", function() {
+      document.body.classList.remove("preload");
+    });
+  }
 };
 </script>
 
