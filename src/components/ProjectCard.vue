@@ -1,0 +1,70 @@
+<template>
+  <div class="project-card">
+    <div :style="`background-color: ${background}`" class="project-card__img">
+      <img :src="url" />
+    </div>
+    <Block>
+      <div class="project-card__content">
+        <p class="p">
+          <span style="font-weight: 500">{{ title }}</span>
+        </p>
+        <p class="p">{{ ingress }}</p>
+      </div>
+    </Block>
+  </div>
+</template>
+
+<script>
+import Block from "./Block";
+
+export default {
+  components: { Block },
+  props: {
+    background: String,
+    url: String,
+    title: String,
+    ingress: String
+  }
+};
+</script>
+
+<style>
+.project-card {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: var(--space-6);
+}
+
+.project-card__content {
+  font-size: 0.9em;
+}
+
+.project-card__img {
+  height: 100%;
+  width: 100%;
+  max-height: 150px;
+  max-width: 150px;
+  border-radius: 10px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.project-card:hover .project-card__img {
+  transform: translateY(-5px);
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.08);
+}
+
+.project-card__img img {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 10px;
+}
+</style>

@@ -1,18 +1,35 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <Container>
+      <Block :mt="7">
+        <h1 class="h1">Web developer that will make you websites shine.</h1>
+      </Block>
+      <Block :mt="5">
+        <ul class="list">
+          <li>
+            <router-link to="/projects" class="a">What I've done</router-link>
+          </li>
+          <li>
+            <a class="a">Where I've worked</a>
+          </li>
+          <li>
+            <a class="a">How to contact me</a>
+          </li>
+        </ul>
+      </Block>
+    </Container>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import Block from "@/components/Block";
+import Container from "@/components/Container";
 
 export default {
   name: "home",
-  components: {
-    HelloWorld
+  components: { Container, Block },
+  created() {
+    document.body.classList.remove("inverted");
   }
 };
 </script>
