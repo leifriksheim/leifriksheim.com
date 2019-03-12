@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="projects">
     <Container>
       <Block :mt="7">
         <h1 class="h4">Things I've done</h1>
@@ -13,7 +13,7 @@
           :url="require('../assets/img/hedwig.png')"
         />
         <ProjectCard
-          background="#f9f2ff"
+          background="#fff"
           title="EmmaSofia"
           slug="emmasofia"
           ingress="Building a unifiying web platform for a non profit"
@@ -46,6 +46,48 @@
           slug="kontrakt"
           ingress="New websites for a lawyer firm"
           :url="require('../assets/img/kontrakt.png')"
+        />
+        <ProjectCard
+          background="#fff"
+          title="Nabobudet"
+          slug="nabobudet"
+          ingress="Making a candy delivery service in Oslo"
+          :url="require('../assets/img/nabobudet.png')"
+        />
+        <ProjectCard
+          background="#fff"
+          title="MiniØya"
+          slug="minioya"
+          ingress="Festival app for a festival for kids"
+          :url="require('../assets/img/minioya.jpg')"
+        />
+        <ProjectCard
+          background="#fff"
+          title="Ways of Percetion"
+          slug="ways-of-perception"
+          ingress="A non-dualistic project"
+          :url="require('../assets/img/waysofperception.jpg')"
+        />
+        <ProjectCard
+          background="#fff"
+          title="TryggTripp.no"
+          slug="trygg-tripp"
+          ingress="A harm reducing web site about psychedelic drug use"
+          :url="require('../assets/img/tryggtripp.jpg')"
+        />
+        <ProjectCard
+          background="#fff"
+          title="Mokkupp"
+          slug="mokkupp"
+          ingress="A simple CMS system for prototyping"
+          :url="require('../assets/img/mokkupp.png')"
+        />
+        <ProjectCard
+          background="#132034"
+          title="Hofbauer"
+          slug="hofbauer"
+          ingress="Website for a guy"
+          :url="require('../assets/img/hofbauer.svg')"
         />
       </Block>
     </Container>

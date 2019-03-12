@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="project">
     <Container>
       <Block :mt="7">
         <h1 class="h4">{{ title }}</h1>
@@ -22,7 +22,7 @@ export default {
     };
   },
   created() {
-    document.body.classList.remove("inverted");
+    document.body.classList.add("inverted");
   }
 };
 </script>
