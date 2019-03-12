@@ -8,7 +8,7 @@
             Leif Riksheim
           </router-link>
           <span class="dash" />
-          <a class="a" @click="showMenu = !showMenu">Menu</a>
+          <a class="a" @click="showMenu = !showMenu">{{ title }}</a>
           <transition name="drop">
             <nav v-show="showMenu" class="menu">
               <a class="a" href="#">Projects</a>
@@ -29,9 +29,14 @@ import Container from "@/components/Container";
 export default {
   name: "navbar",
   components: { Container, Block },
+  beforeRouterUpdate(to) {
+    console.log(to);
+    //this.title = to.meta.title;
+  },
   data() {
     return {
-      showMenu: false
+      showMenu: false,
+      title: "Menu"
     };
   }
 };

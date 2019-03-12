@@ -6,8 +6,8 @@
 body {
   font-size: var(--text-base-size);
   font-family: var(--font-primary);
-  background-color: var(--color-darkest);
-  color: var(--color-lightest);
+  background-color: var(--color-lightest);
+  color: var(--color-darkest);
   transition: background-color 0.5s ease, color 0.5s ease;
   font-kerning: normal;
 }

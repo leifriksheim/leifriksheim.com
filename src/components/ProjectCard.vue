@@ -34,7 +34,7 @@ export default {
   cursor: pointer;
   display: flex;
   flex-direction: row;
-  color: var(--color-lightest);
+  color: var(--color-darkest);
   text-decoration: none;
   justify-content: flex-start;
   margin-bottom: var(--space-6);

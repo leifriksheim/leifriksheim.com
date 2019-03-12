@@ -11,22 +11,26 @@ export default new Router({
     {
       path: "/",
       name: "home",
-      component: Home
+      component: Home,
+      meta: { title: "Menu" }
     },
     {
       path: "/cv",
       name: "cv",
+      meta: { title: "CV" },
       component: () => import(/* webpackChunkName: "about" */ "./views/CV.vue")
     },
     {
       path: "/projects",
       name: "projects",
+      meta: { title: "Projects" },
       component: () =>
         import(/* webpackChunkName: "about" */ "./views/Projects.vue")
     },
     {
       path: "/project/:slug",
       name: "project",
+      meta: { title: "Project" },
       component: () =>
         import(/* webpackChunkName: "about" */ "./views/Project.vue")
     }

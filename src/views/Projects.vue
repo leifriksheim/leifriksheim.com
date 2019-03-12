@@ -2,29 +2,29 @@
   <div class="projects">
     <Container>
       <Block :mt="7">
-        <h1 class="h4">Things I've done</h1>
+        <h1 class="h4">Latest projects</h1>
       </Block>
       <Block :mt="5" :mb="7">
-        <ProjectCard
-          background="#fff"
-          slug="hedwig"
-          title="Hedwig"
-          ingress="A new design system for Norways postal service"
-          :url="require('../assets/img/hedwig.png')"
-        />
-        <ProjectCard
-          background="#fff"
-          title="EmmaSofia"
-          slug="emmasofia"
-          ingress="Building a unifiying web platform for a non profit"
-          :url="require('../assets/img/emmasofia.png')"
-        />
         <ProjectCard
           background="#fff"
           title="Customel"
           slug="customel"
           ingress="A tiny Custom Element library"
           :url="require('../assets/img/customel.png')"
+        />
+        <ProjectCard
+          background="#1a488d"
+          title="Kontrakt"
+          slug="kontrakt"
+          ingress="New websites for a lawyer firm"
+          :url="require('../assets/img/kontrakt-white.png')"
+        />
+        <ProjectCard
+          background="#fff"
+          slug="hedwig"
+          title="Hedwig"
+          ingress="A new design system for Norways postal service"
+          :url="require('../assets/img/hedwig.png')"
         />
         <ProjectCard
           background="#fff"
@@ -35,17 +35,17 @@
         />
         <ProjectCard
           background="#fff"
+          title="EmmaSofia"
+          slug="emmasofia"
+          ingress="Building a unifiying web platform for a non profit"
+          :url="require('../assets/img/emmasofia.png')"
+        />
+        <ProjectCard
+          background="#fff"
           title="Oh Shit Git!"
           slug="ohshitgit"
           ingress="A cli tool to help you unfuck your git mistakes"
           :url="require('../assets/img/ohshitgit.png')"
-        />
-        <ProjectCard
-          background="#fff"
-          title="Kontrakt"
-          slug="kontrakt"
-          ingress="New websites for a lawyer firm"
-          :url="require('../assets/img/kontrakt.png')"
         />
         <ProjectCard
           background="#fff"
@@ -103,7 +103,7 @@ export default {
   name: "home",
   components: { Block, Container, ProjectCard },
   created() {
-    document.body.classList.add("inverted");
+    document.body.classList.remove("inverted");
   }
 };
 </script>

@@ -2,7 +2,11 @@
   <div class="cv">
     <Container>
       <Block :mt="7">
-        <h1 class="h4">Cv</h1>
+        <h1 class="h4">I'm currently working as a freelancer</h1>
+        <p>
+          I studied Art Direction, and come from a design background. At the
+          same time I have always had an interest for programming.
+        </p>
       </Block>
       <Block :mt="6" :mb="7">
         <Block full :mb="4">
@@ -22,11 +26,11 @@
           <li>
             <div>
               <h3 class="h5">Front end designer</h3>
-              <p>Netlife</p>
+              <p>Netlife Design</p>
             </div>
             <div>
-              <span>2018 -</span>
-              <span>&nbsp;2019</span>
+              <span>2017 -</span>
+              <span>&nbsp;2018</span>
             </div>
           </li>
           <li>
@@ -35,8 +39,18 @@
               <p>Empefire</p>
             </div>
             <div>
-              <span>2018 -</span>
-              <span>&nbsp;2019</span>
+              <span>2015 -</span>
+              <span>&nbsp;2017</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3 class="h5">Photo Journalist</h3>
+              <p>Aktiv i Oslo</p>
+            </div>
+            <div>
+              <span>2008 -</span>
+              <span>&nbsp;2012</span>
             </div>
           </li>
         </ul>
@@ -52,8 +66,8 @@
               <p>Westerdals Scool of Communcation</p>
             </div>
             <div>
-              <span>2018 -</span>
-              <span>&nbsp;2019</span>
+              <span>2012 -</span>
+              <span>&nbsp;2015</span>
             </div>
           </li>
           <li>
@@ -62,8 +76,24 @@
               <p>Elvebakken VGS</p>
             </div>
             <div>
-              <span>2018 -</span>
-              <span>&nbsp;2019</span>
+              <span>2008 -</span>
+              <span>&nbsp;2011</span>
+            </div>
+          </li>
+        </ul>
+      </Block>
+      <Block :mt="6" :mb="7">
+        <Block full :mb="4">
+          <h2 class="h5">Projects</h2>
+        </Block>
+        <ul class="cv-list">
+          <li>
+            <div>
+              <h3 class="h5">Kontrakt Lawyer Firm</h3>
+              <p>Web development / Design</p>
+            </div>
+            <div>
+              <span>2019</span>
             </div>
           </li>
         </ul>
@@ -80,7 +110,7 @@ export default {
   name: "home",
   components: { Block, Container },
   created() {
-    document.body.classList.add("inverted");
+    document.body.classList.remove("inverted");
   }
 };
 </script>

@@ -2,7 +2,7 @@
   <div class="home">
     <Container>
       <Block :mt="7">
-        <h1 class="h1">Hey. I'm a web developer that design.</h1>
+        <h1 class="h1">I design and develop things on the internet.</h1>
       </Block>
       <Block :mt="5">
         <ul class="list">
@@ -29,7 +29,7 @@ export default {
   name: "home",
   components: { Container, Block },
   created() {
-    document.body.classList.remove("inverted");
+    document.body.classList.add("inverted");
   }
 };
 </script>
