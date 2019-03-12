@@ -40,14 +40,14 @@ body {
   --font-primary: "Avenir Next", Helvetica, Arial, "sans-serif";
 
   --text-base-size: 1em;
-  --text-scale-ratio: 1.8;
+  --text-scale-ratio: 1.4;
 
   --font-size-1: calc(1em / var(--text-scale-ratio) * 1);
   --font-size-2: calc(1em / var(--text-scale-ratio) * 1.4);
   --font-size-3: calc(1em / var(--text-scale-ratio) * 1.8);
   --font-size-4: calc(1em / var(--text-scale-ratio) * 2);
-  --font-size-5: calc(1em / var(--text-scale-ratio) * 3.4);
-  --font-size-6: calc(1em / var(--text-scale-ratio) * 4);
+  --font-size-5: calc(1em / var(--text-scale-ratio) * 3.6);
+  --font-size-6: calc(1em / var(--text-scale-ratio) * 3.9);
   --font-size-7: calc(1em / var(--text-scale-ratio) * 5);
   --p: calc(1em / var(--text-scale-ratio) * 1);
 

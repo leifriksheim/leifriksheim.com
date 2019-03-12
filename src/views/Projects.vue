@@ -76,13 +76,6 @@
           :url="require('../assets/img/tryggtripp.jpg')"
         />
         <ProjectCard
-          background="#fff"
-          title="Mokkupp"
-          slug="mokkupp"
-          ingress="A simple CMS system for prototyping"
-          :url="require('../assets/img/mokkupp.png')"
-        />
-        <ProjectCard
           background="#132034"
           title="Hofbauer"
           slug="hofbauer"
