@@ -1,0 +1,25 @@
+{
+  "projects": [
+    {
+      "path": "public/projects/gro.md",
+      "title": "Gro",
+      "ingress": "Her står det noe mer",
+      "featured": "/projects/gro/logo.jpg",
+      "content": "\n## Halla\n\n![alt text](/img/gro.jpg)\n"
+    },
+    {
+      "path": "public/projects/kontrakt.md",
+      "title": "Kontrakt",
+      "ingress": "Her står det enda mer",
+      "featured": "/projects/kontrakt/logo.png",
+      "content": "\n## Halla\n\n![alt text](/img/gro.jpg)\n"
+    },
+    {
+      "path": "public/projects/test.md",
+      "title": "Testinger",
+      "ingress": "Hallaaaa",
+      "featured": "/projects/gro/logo.jpg",
+      "content": "\n## Halla\n\n![alt text](/img/gro.jpg)\n"
+    }
+  ]
+}

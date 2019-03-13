@@ -21,6 +21,13 @@ export default new Router({
       component: () => import(/* webpackChunkName: "about" */ "./views/CV.vue")
     },
     {
+      path: "/contact",
+      name: "contact",
+      meta: { title: "Contact" },
+      component: () =>
+        import(/* webpackChunkName: "about" */ "./views/Contact.vue")
+    },
+    {
       path: "/projects",
       name: "projects",
       meta: { title: "Projects" },
@@ -34,5 +41,12 @@ export default new Router({
       component: () =>
         import(/* webpackChunkName: "about" */ "./views/Project.vue")
     }
-  ]
+  ],
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition;
+    } else {
+      return { x: 0, y: 0 };
+    }
+  }
 });

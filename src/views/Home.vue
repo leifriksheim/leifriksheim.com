@@ -13,7 +13,21 @@
             <router-link to="/cv" class="a">Experience</router-link>
           </li>
           <li>
-            <a class="a">Contact me</a>
+            <router-link to="/contact" class="a">Contact me</router-link>
+          </li>
+        </ul>
+      </Block>
+      <Block :mt="5">
+        <ul class="list list--horisontal">
+          <li>
+            <a class="a">
+              <Icon name="github" />
+            </a>
+          </li>
+          <li>
+            <a class="a">
+              <Icon name="linkedin" />
+            </a>
           </li>
         </ul>
       </Block>
@@ -24,10 +38,11 @@
 <script>
 import Block from "@/components/Block";
 import Container from "@/components/Container";
+import Icon from "@/components/Icon";
 
 export default {
   name: "home",
-  components: { Container, Block },
+  components: { Container, Block, Icon },
   created() {
     document.body.classList.add("inverted");
   }

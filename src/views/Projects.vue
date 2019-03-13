@@ -6,6 +6,15 @@
       </Block>
       <Block :mt="5" :mb="7">
         <ProjectCard
+          v-for="(project, index) in projects"
+          :key="index"
+          background="#fff"
+          :title="project.title"
+          slug="customel"
+          :ingress="project.ingress"
+          :url="project.featured"
+        />
+        <ProjectCard
           background="#fff"
           title="Customel"
           slug="customel"
@@ -88,12 +97,19 @@
 </template>
 
 <script>
+import { projects } from "@/db.json";
+
 import Block from "@/components/Block";
 import Container from "@/components/Container";
 import ProjectCard from "@/components/ProjectCard";
 
 export default {
   name: "home",
+  data() {
+    return {
+      projects
+    };
+  },
   components: { Block, Container, ProjectCard },
   created() {
     document.body.classList.remove("inverted");

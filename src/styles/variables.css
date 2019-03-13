@@ -37,7 +37,7 @@ body {
 
   /* TEXT */
 
-  --font-primary: "Avenir Next", Helvetica, Arial, "sans-serif";
+  --font-primary: "Graphik", Helvetica, Arial, "sans-serif";
 
   --text-base-size: 1em;
   --text-scale-ratio: 1.4;
@@ -63,6 +63,7 @@ body {
   /* BOX MODEL */
   --border-radius: 4px;
   --box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+  --box-shadow-large: 0px 30px 50px 0px rgba(0, 0, 0, 0.08);
 
   /* NAVBAR */
   --navbar-height: 100px;
@@ -91,7 +92,7 @@ body {
   }
 }
 
-body.inverted {
+.inverted {
   --color-dark: #848484;
   --color-darker: #cecece;
   --color-darkest: #fff;
@@ -99,4 +100,7 @@ body.inverted {
   --color-light: #808080;
   --color-lighter: #444444;
   --color-lightest: #000;
+
+  background-color: var(--color-lightest);
+  color: var(--color-darkest);
 }

@@ -12,6 +12,10 @@ body {
   font-kerning: normal;
 }
 
+img {
+  max-width: 100%;
+}
+
 body.preload {
   transition: none !important;
 }
@@ -20,6 +24,12 @@ ul.list {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+ul.list--horisontal li {
+  display: inline-block;
+  margin: 0;
+  margin-right: var(--space-3);
 }
 
 ul.list li {
@@ -34,6 +44,10 @@ ul.list li {
   margin-left: var(--space-3);
   margin-right: var(--space-3);
   background-color: var(--color-light);
+}
+
+.box-shadow-large {
+  box-shadow: var(--box-shadow-large);
 }
 
 a.a {
@@ -58,7 +72,8 @@ p {
 }
 
 p.ingress {
-  font-size: var(--font-size-3);
+  font-size: var(--font-size-4);
+  color: var(--color-darker);
 }
 
 .h1 {

@@ -26,7 +26,10 @@
           <li>
             <div>
               <h3 class="h5">Front end designer</h3>
-              <p>Netlife Design</p>
+              <a class="a"
+                >Netlife Design
+                <Icon name="external-link" />
+              </a>
             </div>
             <div>
               <span>2017 -</span>
@@ -36,7 +39,10 @@
           <li>
             <div>
               <h3 class="h5">Creative Technologist</h3>
-              <p>Empefire</p>
+              <a class="a"
+                >Empefire
+                <Icon name="external-link" />
+              </a>
             </div>
             <div>
               <span>2015 -</span>
@@ -46,7 +52,10 @@
           <li>
             <div>
               <h3 class="h5">Photo Journalist</h3>
-              <p>Aktiv i Oslo</p>
+              <a class="a"
+                >Aktiv i Oslo
+                <Icon name="external-link" />
+              </a>
             </div>
             <div>
               <span>2008 -</span>
@@ -63,7 +72,10 @@
           <li>
             <div>
               <h3 class="h5">Art Direction</h3>
-              <p>Westerdals Scool of Communcation</p>
+              <a class="a"
+                >Westerdals Scool of Communcation
+                <Icon name="external-link" />
+              </a>
             </div>
             <div>
               <span>2012 -</span>
@@ -73,7 +85,10 @@
           <li>
             <div>
               <h3 class="h5">Media and Communcation</h3>
-              <p>Elvebakken VGS</p>
+              <a class="a"
+                >Elvebakken VGS
+                <Icon name="external-link" />
+              </a>
             </div>
             <div>
               <span>2008 -</span>
@@ -105,10 +120,11 @@
 <script>
 import Block from "@/components/Block";
 import Container from "@/components/Container";
+import Icon from "@/components/Icon";
 
 export default {
   name: "home",
-  components: { Block, Container },
+  components: { Block, Container, Icon },
   created() {
     document.body.classList.remove("inverted");
   }
@@ -135,6 +151,10 @@ export default {
   padding-top: var(--space-3);
   display: flex;
   justify-content: space-between;
+}
+
+.cv-list h3 {
+  margin-bottom: var(--space-2);
 }
 
 .cv-list li div:nth-child(1) {

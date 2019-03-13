@@ -25,7 +25,7 @@ export default {
 
 <style>
 .icon-wrapper {
-  display: inline-flex;
+  display: inline-block;
 }
 
 .icon-wrapper.round {
@@ -36,8 +36,8 @@ export default {
 }
 
 .icon {
-  width: var(--space-4);
-  height: var(--space-4);
+  width: 1em;
+  height: 1em;
   stroke: currentColor;
   stroke-width: 2;
   stroke-linecap: round;
@@ -46,7 +46,7 @@ export default {
 }
 
 .icon.small {
-  width: var(--space-3);
-  height: var(--space-3);
+  width: 0.8em;
+  height: 0.8em;
 }
 </style>
