@@ -1,0 +1,21 @@
+.markdown p {
+  margin-top: var(--space-5);
+  margin-bottom: var(--space-5);
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5 {
+  margin-top: var(--space-5);
+  margin-bottom: var(--space-2);
+}
+
+.markdown a {
+  color: var(--color-dark);
+}
+
+.markdown a:hover {
+  color: var(--color-darkest);
+}

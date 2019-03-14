@@ -1,6 +1,9 @@
 <template>
   <router-link class="project-card" :to="`/project/${slug}`">
-    <div :style="`background-color: ${background}`" class="project-card__img">
+    <div
+      :style="`background-color: ${backgroundColor}`"
+      class="project-card__img"
+    >
       <img :src="url" />
     </div>
     <Block>
@@ -18,7 +21,10 @@ import Block from "./Block";
 export default {
   components: { Block },
   props: {
-    background: String,
+    backgroundColor: {
+      default: "#fff",
+      type: String
+    },
     url: String,
     title: String,
     ingress: String,

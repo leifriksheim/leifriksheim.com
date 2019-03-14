@@ -1,9 +1,10 @@
 ---
 title: Gro
-ingress: Her står det noe mer
+slug: gro
+ingress: Growing spices in a container in Oslo
 featured: "/projects/gro/logo.jpg"
 ---
 
-## Halla
+Here is some text about the project
 
-![alt text](/img/gro.jpg)
+![alt text](/projects/gro/gro.jpg)

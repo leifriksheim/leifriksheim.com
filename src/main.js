@@ -3,6 +3,7 @@ import App from "./App.vue";
 import router from "./router";
 
 import "./styles/variables.css";
+import "./styles/markdown.css";
 import "./styles/sanitize.css";
 import "./styles/fonts.css";
 import "./styles/typography.css";

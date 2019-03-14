@@ -3,23 +3,76 @@
     {
       "path": "public/projects/gro.md",
       "title": "Gro",
-      "ingress": "Her står det noe mer",
+      "ingress": "Growing spices in a container in Oslo",
       "featured": "/projects/gro/logo.jpg",
-      "content": "\n## Halla\n\n![alt text](/img/gro.jpg)\n"
+      "content": "\nHere is some text about the project\n\n![alt text](/projects/gro/gro.jpg)\n",
+      "slug": "gro"
     },
     {
       "path": "public/projects/kontrakt.md",
       "title": "Kontrakt",
       "ingress": "Her står det enda mer",
-      "featured": "/projects/kontrakt/logo.png",
-      "content": "\n## Halla\n\n![alt text](/img/gro.jpg)\n"
+      "featured": "/projects/kontrakt/logo-white.png",
+      "content": "\n## Halla\n\n![alt text](/img/gro.jpg)\n",
+      "backgroundColor": "#1a488d",
+      "slug": "kontrakt"
     },
     {
-      "path": "public/projects/test.md",
-      "title": "Testinger",
-      "ingress": "Hallaaaa",
-      "featured": "/projects/gro/logo.jpg",
-      "content": "\n## Halla\n\n![alt text](/img/gro.jpg)\n"
+      "path": "public/projects/hedwig.md",
+      "title": "Hedwig",
+      "ingress": "A new design system for Norways postal service",
+      "featured": "/projects/hedwig/logo.png",
+      "content": "\n## Halla\n\n![alt text](/img/gro.jpg)\n",
+      "slug": "hedwig"
+    },
+    {
+      "path": "public/projects/emmasofia.md",
+      "title": "EmmaSofia",
+      "ingress": "Building a unifiying web platform for a non profit",
+      "featured": "/projects/emmasofia/logo.png",
+      "content": "\n## Halla\n\n![alt text](/img/gro.jpg)\n",
+      "slug": "emmasofia"
+    },
+    {
+      "path": "public/projects/ohshitgit.md",
+      "title": "Oh Shit Git!",
+      "ingress": "A cli tool to help you unfuck your git mistakes",
+      "featured": "/projects/ohshitgit/logo.png",
+      "content": "\n![halla](/projects/ohshitgit/screenshot.gif)\n\nGit is hard: screwing up is easy, and figuring out how to fix your mistakes is fucking impossible.\n\n## Install\n\n```bash\nnpm install -g ohshitgit\n```\n\n## Usage\n\nOnce that's done, you can run this command inside your project's root directory:\n\n```bash\nohshit\n```\n\nThat's it! :tada:\n\n## Inspired by\n\n[Katie Sylor-Miller's](https://twitter.com/ksylor) awesome webpage [Oh Shit Git!](https://ohshitgit.com/)\n\n## Author\n\nLeif Riksheim ([@leifriksheim](https://github.com/leifriksheim)) - [WTFoo](https://github.com/whatthefoo)\n",
+      "slug": "ohshitgit"
+    },
+    {
+      "path": "public/projects/nabobudet.md",
+      "title": "Nabobudet",
+      "ingress": "Making a candy delivery service in Oslo",
+      "featured": "/projects/nabobudet/logo.png",
+      "content": "\n## Halla\n\n![alt text](/projects/gro/gro.jpg)\n",
+      "slug": "nabobudet"
+    },
+    {
+      "path": "public/projects/minioya.md",
+      "title": "MiniØya",
+      "ingress": "Festival app for a festival for kids",
+      "featured": "/projects/minioya/logo.jpg",
+      "content": "\n## Halla\n\n![alt text](/img/gro.jpg)\n",
+      "slug": "minioya"
+    },
+    {
+      "path": "public/projects/hofbauer.md",
+      "title": "Hofbauer",
+      "ingress": "A website",
+      "featured": "/projects/hofbauer/logo.svg",
+      "content": "\n## Halla\n\n![alt text](/img/gro.jpg)\n",
+      "backgroundColor": "#132034",
+      "slug": "hofbauer"
+    },
+    {
+      "path": "public/projects/customel.md",
+      "title": "Customel",
+      "ingress": "A tiny Custom Element library",
+      "featured": "/projects/customel/logo.png",
+      "content": "\n## Halla\n\n![alt text](/img/gro.jpg)\n",
+      "slug": "customel"
     }
   ]
 }
