@@ -20,6 +20,11 @@ body.preload {
   transition: none !important;
 }
 
+.em {
+  font-weight: 500;
+  font-style: normal;
+}
+
 ul.list {
   list-style: none;
   padding: 0;
@@ -46,10 +51,6 @@ ul.list li {
   background-color: var(--color-light);
 }
 
-.box-shadow-large {
-  box-shadow: var(--box-shadow-large);
-}
-
 a.a {
   cursor: pointer;
   color: inherit;
@@ -66,7 +67,6 @@ a.a:hover {
 }
 
 p {
-  opacity: 0.8;
   line-height: 1.5;
   color: var(--color-light);
 }

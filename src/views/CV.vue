@@ -4,8 +4,11 @@
       <Block :mt="7">
         <h1 class="h4">I'm currently working as a freelancer</h1>
         <p>
-          I studied Art Direction, and come from a design background. At the
-          same time I have always had an interest for programming.
+          I have experience with
+          <em class="em">React</em>, <em class="em">Vue</em> and
+          <em class="em">Node.js</em> and <em class="em">Web Components</em>.
+          For design I use <em class="em">Figma</em> or
+          <em class="em">Sketch</em>.
         </p>
       </Block>
       <Block :mt="6" :mb="7">

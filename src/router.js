@@ -12,12 +12,12 @@ export default new Router({
       path: "/",
       name: "home",
       component: Home,
-      meta: { title: "Menu" }
+      meta: { title: "Home" }
     },
     {
       path: "/cv",
       name: "cv",
-      meta: { title: "CV" },
+      meta: { title: "Experience" },
       component: () => import(/* webpackChunkName: "about" */ "./views/CV.vue")
     },
     {
@@ -30,7 +30,7 @@ export default new Router({
     {
       path: "/projects",
       name: "projects",
-      meta: { title: "Projects" },
+      meta: { title: "Portfolio" },
       component: () =>
         import(/* webpackChunkName: "about" */ "./views/Projects.vue")
     },

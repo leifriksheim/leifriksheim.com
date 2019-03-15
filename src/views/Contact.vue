@@ -2,13 +2,13 @@
   <div class="cv">
     <Container>
       <Block :mt="7">
-        <h1 class="h4">Contact information</h1>
+        <h1 class="h4">Feel free to contact me</h1>
       </Block>
       <Block :mt="6" :mb="7">
         <ul class="list">
           <li><Icon name="phone" />&nbsp;&nbsp;+48 25 46 61</li>
           <li><Icon name="mail" />&nbsp;&nbsp;riksheim.leif@gmail.com</li>
-          <li><Icon name="message-circle" />&nbsp;&nbsp;+48 25 46 61</li>
+          <li><Icon name="linkedin" />&nbsp;&nbsp;leifriksheim</li>
         </ul>
       </Block>
     </Container>

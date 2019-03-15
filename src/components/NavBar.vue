@@ -8,14 +8,7 @@
             Leif Riksheim
           </router-link>
           <span class="dash" />
-          <a class="a" @click="showMenu = !showMenu">{{ title }}</a>
-          <transition name="drop">
-            <nav v-show="showMenu" class="menu">
-              <a class="a" href="#">Projects</a>
-              <a class="a" href="#">Cv</a>
-              <a class="a" href="#">Contact</a>
-            </nav>
-          </transition>
+          <span>{{ title }}</span>
         </div>
       </Block>
     </Container>
@@ -25,28 +18,28 @@
 <script>
 import Block from "@/components/Block";
 import Container from "@/components/Container";
+import { setTimeout } from "timers";
 
 export default {
   name: "navbar",
   components: { Container, Block },
-  beforeRouterUpdate(to) {
-    console.log(to);
-    //this.title = to.meta.title;
+  watch: {
+    "$route.path": function() {
+      setTimeout(() => {
+        this.title = this.$route.meta.title;
+      }, 700);
+    }
   },
   data() {
     return {
       showMenu: false,
-      title: "Menu"
+      title: "Home"
     };
   }
 };
 </script>
 
 <style>
-.nav-wrapper {
-  position: relative;
-}
-
 .avatar-link {
   text-decoration: none;
   color: inherit;
@@ -59,29 +52,5 @@ export default {
   height: var(--space-4);
   margin-right: var(--space-2);
   border-radius: 100%;
-}
-
-.menu {
-  position: absolute;
-  top: var(--space-5);
-  left: 0;
-  width: 100%;
-  text-align: left;
-  z-index: 999;
-}
-
-.menu a {
-  padding-right: var(--space-4);
-  display: inline-block;
-}
-
-.drop-enter-active,
-.drop-leave-active {
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-.drop-enter,
-.drop-leave-to {
-  opacity: 0;
-  transform: translateY(-10px);
 }
 </style>

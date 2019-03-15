@@ -63,7 +63,7 @@ body {
   /* BOX MODEL */
   --border-radius: 4px;
   --box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
-  --box-shadow-large: 0px 30px 50px 0px rgba(0, 0, 0, 0.08);
+  --box-shadow-large: 0px 22px 42px 8px rgba(0, 0, 0, 0.1);
 
   /* NAVBAR */
   --navbar-height: 100px;
