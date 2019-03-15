@@ -4,8 +4,7 @@
       <Block :mt="6">
         <div class="nav-wrapper">
           <router-link to="/" class="avatar-link">
-            <img class="avatar" src="../assets/profile.jpg" />
-            Leif Riksheim
+            <img class="avatar" src="../assets/profile.jpg" />Leif Riksheim
           </router-link>
           <span class="dash" />
           <span>{{ title }}</span>

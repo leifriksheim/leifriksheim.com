@@ -21,7 +21,6 @@
 }
 
 .markdown img {
-  box-shadow: var(--box-shadow-large);
   border-radius: 20px;
   border: 1px solid #fafafa;
 }

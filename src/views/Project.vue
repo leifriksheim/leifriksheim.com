@@ -3,7 +3,15 @@
     <Container>
       <Block :mt="7">
         <h1 class="h2">{{ project.title }}</h1>
+
         <p class="ingress">{{ project.ingress }}</p>
+        <Block full :mt="3">
+          <ul class="list list--horisontal">
+            <li class="pill" :key="tag" v-for="tag in project.tags">
+              {{ tag }}
+            </li>
+          </ul>
+        </Block>
       </Block>
       <Block :mt="5" :mb="6">
         <div class="markdown" v-html="projectHtml" />

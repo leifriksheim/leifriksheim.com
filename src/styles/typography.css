@@ -25,6 +25,14 @@ body.preload {
   font-style: normal;
 }
 
+.pill {
+  border-radius: 300px;
+  background: var(--color-lighter);
+  padding: var(--space-2) var(--space-4);
+  font-size: 0.7em;
+  color: var(--color-dark);
+}
+
 ul.list {
   list-style: none;
   padding: 0;
@@ -48,7 +56,7 @@ ul.list li {
   transform: translateY(calc(var(--space-1) * -1));
   margin-left: var(--space-3);
   margin-right: var(--space-3);
-  background-color: var(--color-light);
+  background-color: var(--color-dark);
 }
 
 a.a {
@@ -68,7 +76,7 @@ a.a:hover {
 
 p {
   line-height: 1.5;
-  color: var(--color-light);
+  color: var(--color-dark);
 }
 
 p.ingress {

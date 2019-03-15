@@ -12,16 +12,16 @@
       "path": "public/projects/emmasofia.md",
       "title": "EmmaSofia",
       "slug": "emmasofia",
+      "backgroundColor": "#ffe2ff",
       "ingress": "Building a unifiying web platform for a non profit",
       "featured": "/projects/emmasofia/logo.png",
-      "content": "\nEmmaSofia is an political organization working for a drug policy reform in Norway,\nbased on evidence and respect for human rights.\n\nBefore the new websites, their communication was fragmented. They had a web shop selling testkits in one place, they had a website another place, and they did all the member registration manually.\n\n![boxes](/projects/emmasofia/boxes.jpg)\n\nThe first part of the process involved making [a unifying design library](https://emmasofia-styleguide.netlify.com/) for the organization.\nThis way we could ensure that the organization had a similar look throughout different campaign sites. Also it would provide a UI-kit to other developers to be able to build pages quick.\n\nThen came the webpage\n\n![boxes](/projects/emmasofia/webpage2.png)\n",
-      "backgroundColor": "#ffe2ff",
       "tags": [
         "Vue.js",
         "Node.js",
         "Brand Design",
         "Design"
-      ]
+      ],
+      "content": "\nEmmaSofia is an political organization working for a drug policy reform in Norway,\nbased on evidence and respect for human rights.\n\nBefore the new websites, their communication was fragmented. They had a web shop selling testkits in one place, they had a website another place, and they did all the member registration manually.\n\n![boxes](/projects/emmasofia/boxes.jpg)\n\nThe first part of the process involved making [a unifying design library](https://emmasofia-styleguide.netlify.com/) for the organization.\nThis way we could ensure that the organization had a similar look throughout different campaign sites. Also it would provide a UI-kit to other developers to be able to build pages quick.\n\nThen came the webpage\n\n![boxes](/projects/emmasofia/webpage2.png)\n"
     },
     {
       "path": "public/projects/gro.md",
@@ -29,7 +29,7 @@
       "slug": "gro",
       "ingress": "Growing spices in a container in Oslo",
       "featured": "/projects/gro/logo.jpg",
-      "content": "\nHere is some text about the project\n\n![alt text](/projects/gro/gro.jpg)\n"
+      "content": "\nGro is a\n\n![alt text](/projects/gro/gro.jpg)\n"
     },
     {
       "path": "public/projects/hedwig.md",
@@ -63,7 +63,7 @@
       "slug": "minioya",
       "ingress": "Festival app for a festival for kids",
       "featured": "/projects/minioya/logo.jpg",
-      "content": "\n## Halla\n\n![alt text](/img/gro.jpg)\n"
+      "content": "\n## Halla\n\n![alt text](/projects/minioya/iphones.png)\n\n![alt text](/projects/minioya/iphone2.jpg)\n"
     },
     {
       "path": "public/projects/nabobudet.md",
@@ -87,11 +87,11 @@
       "slug": "spent",
       "ingress": "Budgeting PWA",
       "featured": "/projects/spent/logo.svg",
-      "content": "",
       "tags": [
         "PWA",
         "React.js"
-      ]
+      ],
+      "content": "\n![spent](/projects/spent/screen.jpg)\n"
     }
   ]
 }

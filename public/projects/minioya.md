@@ -7,4 +7,6 @@ featured: "/projects/minioya/logo.jpg"
 
 ## Halla
 
-![alt text](/img/gro.jpg)
+![alt text](/projects/minioya/iphones.png)
+
+![alt text](/projects/minioya/iphone2.jpg)

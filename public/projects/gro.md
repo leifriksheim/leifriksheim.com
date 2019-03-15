@@ -5,6 +5,6 @@ ingress: Growing spices in a container in Oslo
 featured: "/projects/gro/logo.jpg"
 ---
 
-Here is some text about the project
+Gro is a
 
 ![alt text](/projects/gro/gro.jpg)
