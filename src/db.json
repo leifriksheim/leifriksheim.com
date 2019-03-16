@@ -5,8 +5,8 @@
       "title": "Customel",
       "slug": "customel",
       "ingress": "A tiny Custom Element library",
-      "featured": "/projects/customel/logo.png",
-      "content": "\n## Halla\n\n![alt text](/img/gro.jpg)\n"
+      "thumbnail": "/projects/customel/logo.png",
+      "content": ""
     },
     {
       "path": "public/projects/emmasofia.md",
@@ -14,84 +14,111 @@
       "slug": "emmasofia",
       "backgroundColor": "#ffe2ff",
       "ingress": "Building a unifiying web platform for a non profit",
-      "featured": "/projects/emmasofia/logo.png",
+      "thumbnail": "/projects/emmasofia/logo.png",
       "tags": [
         "Vue.js",
         "Node.js",
-        "Brand Design",
-        "Design"
+        "Design",
+        "Webshop",
+        "Paypal integration"
       ],
-      "content": "\nEmmaSofia is an political organization working for a drug policy reform in Norway,\nbased on evidence and respect for human rights.\n\nBefore the new websites, their communication was fragmented. They had a web shop selling testkits in one place, they had a website another place, and they did all the member registration manually.\n\n![boxes](/projects/emmasofia/boxes.jpg)\n\nThe first part of the process involved making [a unifying design library](https://emmasofia-styleguide.netlify.com/) for the organization.\nThis way we could ensure that the organization had a similar look throughout different campaign sites. Also it would provide a UI-kit to other developers to be able to build pages quick.\n\nThen came the webpage\n\n![boxes](/projects/emmasofia/webpage2.png)\n"
+      "content": "\nWhile expanding their work, the communication outgrew EmmaSofia and ended up as being fragmented. They had to manage several different domains and technologies, with a webshop in one place, a website in another, and with manually registration of members and payments.\n\nI made a new unified styleguide, new websites and integrated their existing shopify web shop into their new webpage. I also made a Node.js server to connect different microservices like PayPal and AirTable to make a new automatic member system.\n",
+      "featuredImg": "/projects/emmasofia/macbook.png",
+      "link": "https://emmasofia.no",
+      "linkText": "emmasofia.no"
     },
     {
       "path": "public/projects/gro.md",
       "title": "Gro",
       "slug": "gro",
       "ingress": "Growing spices in a container in Oslo",
-      "featured": "/projects/gro/logo.jpg",
-      "content": "\nGro is a\n\n![alt text](/projects/gro/gro.jpg)\n"
+      "thumbnail": "/projects/gro/logo.jpg",
+      "content": "",
+      "featuredImg": "/projects/gro/gro.jpg",
+      "tags": [
+        "Branding",
+        "Web development"
+      ],
+      "link": "halla",
+      "linkText": "See the (original) web page here"
     },
     {
       "path": "public/projects/hedwig.md",
       "title": "Hedwig",
       "slug": "hedwig",
       "ingress": "A new design system for Norways postal service",
-      "featured": "/projects/hedwig/logo.png",
-      "content": "\n## Halla\n\n![alt text](/img/gro.jpg)\n"
+      "thumbnail": "/projects/hedwig/logo.png",
+      "content": ""
     },
     {
       "path": "public/projects/hofbauer.md",
       "title": "Hofbauer",
       "slug": "hofbauer",
       "ingress": "A website",
-      "featured": "/projects/hofbauer/logo.svg",
+      "thumbnail": "/projects/hofbauer/logo.svg",
       "backgroundColor": "#132034",
-      "content": "\n## Halla\n\n![alt text](/img/gro.jpg)\n"
+      "content": ""
     },
     {
       "path": "public/projects/kontrakt.md",
       "title": "Kontrakt",
       "slug": "kontrakt",
-      "ingress": "Her står det enda mer",
-      "featured": "/projects/kontrakt/logo-white.png",
+      "ingress": "New websites made for Kontrakt Lawyer firm",
+      "thumbnail": "/projects/kontrakt/logo-white.png",
       "backgroundColor": "#1a488d",
-      "content": "\n## Halla\n\n![alt text](/img/gro.jpg)\n"
+      "content": "",
+      "featuredImg": "/projects/kontrakt/macbook2.png",
+      "tags": [
+        "Brand",
+        "Design",
+        "Vue.js",
+        "GraphQL"
+      ]
     },
     {
       "path": "public/projects/minioya.md",
       "title": "MiniØya",
       "slug": "minioya",
-      "ingress": "Festival app for a festival for kids",
-      "featured": "/projects/minioya/logo.jpg",
-      "content": "\n## Halla\n\n![alt text](/projects/minioya/iphones.png)\n\n![alt text](/projects/minioya/iphone2.jpg)\n"
+      "ingress": "Festival app for a kids festival",
+      "thumbnail": "/projects/minioya/logo.jpg",
+      "content": "\nBringing your kids to a festival can be stressful enough, before you even start thinking about navigating the festival area. To make it easier for parents on MiniØya to find food vendors, line-up and stage plan, as well as exit areas, I created an app together with Martine Carlson at Empefire.\n",
+      "featuredImg": "/projects/minioya/iphone2.jpg",
+      "link": "https://appadvice.com/app/mini-ya-2016/1097859367",
+      "linkText": "Appadvice"
     },
     {
       "path": "public/projects/nabobudet.md",
       "title": "Nabobudet",
       "slug": "nabobudet",
       "ingress": "Making a candy delivery service in Oslo",
-      "featured": "/projects/nabobudet/logo.png",
-      "content": "\n## Halla\n\n![alt text](/projects/gro/gro.jpg)\n"
+      "thumbnail": "/projects/nabobudet/logo.png",
+      "content": ""
     },
     {
       "path": "public/projects/ohshitgit.md",
       "title": "Oh Shit Git!",
       "slug": "ohshitgit",
       "ingress": "A cli tool to help you unfuck your git mistakes",
-      "featured": "/projects/ohshitgit/logo.png",
-      "content": "\n![halla](/projects/ohshitgit/screenshot.gif)\n\nGit is hard: screwing up is easy, and figuring out how to fix your mistakes is fucking impossible.\n\n## Install\n\n```bash\nnpm install -g ohshitgit\n```\n\n## Usage\n\nOnce that's done, you can run this command inside your project's root directory:\n\n```bash\nohshit\n```\n\nThat's it! :tada:\n\n## Inspired by\n\n[Katie Sylor-Miller's](https://twitter.com/ksylor) awesome webpage [Oh Shit Git!](https://ohshitgit.com/)\n\n## Author\n\nLeif Riksheim ([@leifriksheim](https://github.com/leifriksheim)) - [WTFoo](https://github.com/whatthefoo)\n"
+      "thumbnail": "/projects/ohshitgit/logo.png",
+      "content": "\nGit is hard: screwing up is easy, and figuring out how to fix your mistakes is fucking impossible.\n\n```bash\nnpm install -g ohshitgit\n```\n\n[![GitHub stars](https://img.shields.io/github/stars/whatthefoo/ohshitgit.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/whatthefoo/ohshitgit/stargazers/)\n",
+      "featuredImg": "/projects/ohshitgit/screenshot.gif",
+      "link": "http://github.com",
+      "linkText": "See on Github"
     },
     {
       "path": "public/projects/spent.md",
       "title": "Spent",
       "slug": "spent",
       "ingress": "Budgeting PWA",
-      "featured": "/projects/spent/logo.svg",
+      "thumbnail": "/projects/spent/logo.svg",
       "tags": [
         "PWA",
         "React.js"
       ],
-      "content": "\n![spent](/projects/spent/screen.jpg)\n"
+      "content": "",
+      "featuredImg": "/projects/spent/screen.jpg",
+      "link": "https://spent.netlify.com",
+      "linkText": "Try the PWA on your phone"
     }
   ]
 }

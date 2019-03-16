@@ -33,6 +33,18 @@ body.preload {
   color: var(--color-dark);
 }
 
+.button {
+  cursor: pointer;
+  background-color: var(--color-darkest);
+  color: var(--color-lightest);
+  border-radius: 20px;
+  padding: var(--space-3) var(--space-5);
+}
+
+.img {
+  border-radius: 20px;
+}
+
 ul.list {
   list-style: none;
   padding: 0;
@@ -79,8 +91,9 @@ p {
   color: var(--color-dark);
 }
 
-p.ingress {
+.ingress {
   font-size: var(--font-size-4);
+  line-height: 1.5;
   color: var(--color-darker);
 }
 

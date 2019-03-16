@@ -3,24 +3,18 @@ title: EmmaSofia
 slug: emmasofia
 backgroundColor: "#ffe2ff"
 ingress: Building a unifiying web platform for a non profit
-featured: "/projects/emmasofia/logo.png"
+thumbnail: "/projects/emmasofia/logo.png"
+featuredImg: "/projects/emmasofia/macbook.png"
+link: "https://emmasofia.no"
+linkText: emmasofia.no
 tags:
   - Vue.js
   - Node.js
-  - Brand Design
   - Design
+  - Webshop
+  - Paypal integration
 ---
 
-EmmaSofia is an political organization working for a drug policy reform in Norway,
-based on evidence and respect for human rights.
+While expanding their work, the communication outgrew EmmaSofia and ended up as being fragmented. They had to manage several different domains and technologies, with a webshop in one place, a website in another, and with manually registration of members and payments.
 
-Before the new websites, their communication was fragmented. They had a web shop selling testkits in one place, they had a website another place, and they did all the member registration manually.
-
-![boxes](/projects/emmasofia/boxes.jpg)
-
-The first part of the process involved making [a unifying design library](https://emmasofia-styleguide.netlify.com/) for the organization.
-This way we could ensure that the organization had a similar look throughout different campaign sites. Also it would provide a UI-kit to other developers to be able to build pages quick.
-
-Then came the webpage
-
-![boxes](/projects/emmasofia/webpage2.png)
+I made a new unified styleguide, new websites and integrated their existing shopify web shop into their new webpage. I also made a Node.js server to connect different microservices like PayPal and AirTable to make a new automatic member system.

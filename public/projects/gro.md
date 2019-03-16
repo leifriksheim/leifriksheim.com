@@ -2,9 +2,11 @@
 title: Gro
 slug: gro
 ingress: Growing spices in a container in Oslo
-featured: "/projects/gro/logo.jpg"
+thumbnail: "/projects/gro/logo.jpg"
+featuredImg: "/projects/gro/gro.jpg"
+link: "halla"
+linkText: "See the (original) web page here"
+tags:
+  - Branding
+  - Web development
 ---
-
-Gro is a
-
-![alt text](/projects/gro/gro.jpg)
