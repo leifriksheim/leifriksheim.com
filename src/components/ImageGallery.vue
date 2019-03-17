@@ -76,7 +76,6 @@ export default {
   width: 100%;
   transition: all 0.8s ease;
   opacity: 0;
-  transform: translateY(50px);
 }
 
 .image-gallery__img--show {
@@ -85,6 +84,5 @@ export default {
 
 .image-gallery__img--show[lazy="loaded"] {
   opacity: 1;
-  transform: translateY(0px);
 }
 </style>
