@@ -4,6 +4,10 @@ slug: minioya
 ingress: Festival app for a kids festival
 thumbnail: "/projects/minioya/logo.jpg"
 featuredImg: "/projects/minioya/iphone2.jpg"
+gallery:
+  - /projects/minioya/iphone2.jpg
+  - /projects/minioya/iphones.png
+
 link: https://appadvice.com/app/mini-ya-2016/1097859367
 linkText: Appadvice
 ---

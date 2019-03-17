@@ -5,16 +5,18 @@ backgroundColor: "#ffe2ff"
 ingress: Building a unifiying web platform for a non profit
 thumbnail: "/projects/emmasofia/logo.png"
 featuredImg: "/projects/emmasofia/macbook.png"
+gallery:
+  - /projects/emmasofia/macbook.png
+  - /projects/emmasofia/boxes.jpg
 link: "https://emmasofia.no"
 linkText: emmasofia.no
 tags:
   - Vue.js
   - Node.js
-  - Design
-  - Webshop
-  - Paypal integration
+  - Designsystem
+  - Paypal
+  - Shopify
+  - AirTable
 ---
 
-While expanding their work, the communication outgrew EmmaSofia and ended up as being fragmented. They had to manage several different domains and technologies, with a webshop in one place, a website in another, and with manually registration of members and payments.
-
-I made a new unified styleguide, new websites and integrated their existing shopify web shop into their new webpage. I also made a Node.js server to connect different microservices like PayPal and AirTable to make a new automatic member system.
+New unified styleguide, new websites and integration with their existing shopify web shop into their new webpage. I also made a Node.js server to connect different microservices like PayPal and AirTable to make a new automatic member system.

@@ -7,7 +7,8 @@
       <Block :mt="7" :mb="7">
         <div v-for="(project, index) in projects" :key="index">
           <Block full :mt="5" :mb="7" v-if="project.featuredImg">
-            <img class="img" :src="project.featuredImg" />
+            <img v-if="!project.gallery" :src="project.featuredImg" />
+            <ImageGallery v-else :images="project.gallery" />
             <Block full :mt="5" :mb="4">
               <span class="h3">{{ project.title }}</span>
               <span class="dash" />
@@ -37,6 +38,7 @@ import marked from "marked";
 import Block from "@/components/Block";
 import Container from "@/components/Container";
 import Icon from "@/components/Icon";
+import ImageGallery from "@/components/ImageGallery";
 
 export default {
   name: "home",
@@ -45,7 +47,7 @@ export default {
       projects
     };
   },
-  components: { Block, Container, Icon },
+  components: { Block, Container, Icon, ImageGallery },
   created() {
     document.body.classList.remove("inverted");
   },
