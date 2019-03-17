@@ -26,7 +26,7 @@ export default {
 
 .grid > * {
   width: 50%;
-  margin-bottom: var(--space-6);
+  margin-bottom: var(--space-3);
 }
 
 .grid > * {

@@ -38,7 +38,14 @@ export default {
 <style>
 .image-gallery {
   position: relative;
-  height: 600px;
+  height: 300px;
+}
+
+@media (min-width: 800px) {
+  .image-gallery {
+    position: relative;
+    height: 600px;
+  }
 }
 
 .image-gallery__left {
@@ -63,7 +70,7 @@ export default {
 
 .image-gallery__img {
   position: absolute;
-  object-fit: contain;
+  object-fit: cover;
   margin: 0 auto;
   height: 100%;
   width: 100%;

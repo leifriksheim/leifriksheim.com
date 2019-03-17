@@ -7,9 +7,12 @@ featuredImg: "/projects/minioya/iphone2.jpg"
 gallery:
   - /projects/minioya/iphone2.jpg
   - /projects/minioya/iphones.png
-
+tags:
+  - iOS
+  - Android
+  - Concept
 link: https://appadvice.com/app/mini-ya-2016/1097859367
 linkText: Appadvice
 ---
 
-Bringing your kids to a festival can be stressful enough, before you even start thinking about navigating the festival area. To make it easier for parents on MiniØya to find food vendors, line-up and stage plan, as well as exit areas, I created an app together with Martine Carlson at Empefire.
+To make it easier for parents on MiniØya to find food vendors, line-up and stage plan, as well as exit areas, I created an app together with Martine Carlson at Empefire.

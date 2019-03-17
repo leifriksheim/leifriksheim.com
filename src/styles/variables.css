@@ -37,7 +37,7 @@ body {
 
   /* TEXT */
 
-  --font-primary: "Graphik", Helvetica, Arial, "sans-serif";
+  --font-primary: "Inter", Helvetica, Arial, "sans-serif";
 
   --text-base-size: 1em;
   --text-scale-ratio: 1.4;

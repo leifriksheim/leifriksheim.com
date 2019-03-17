@@ -14,10 +14,10 @@
       "slug": "embl",
       "ingress": "A modern and easy web site to showcase scientific research",
       "thumbnail": "/projects/customel/logo.png",
-      "featuredImg": "/projects/embl/screen.png",
+      "featuredImg": "/projects/embl/screen2.jpg",
       "link": "https://www.nordicemblpartnership.org/#/",
       "linkText": "Visit web site",
-      "content": "\nThe Nordic EMBL Partnership for Molecular Medicine aims to address some of the biggest challenges in biomedicine today. They needed a new design and website to make it easier to share collaborators, publications and events.\n\nWorking closely together with Erling Aarones, we developed a lightweight website with a focus on making it easy for EMBL to maintain the content.\n"
+      "content": "\nThe Nordic EMBL Partnership for Molecular Medicine aims to address some of the biggest challenges in biomedicine today. Working closely together with Erling Aarones, we developed a lightweight website with a focus on making it easy for EMBL to maintain the content.\n"
     },
     {
       "path": "public/projects/emmasofia.md",
@@ -27,6 +27,10 @@
       "ingress": "Building a unifiying web platform for a non profit",
       "thumbnail": "/projects/emmasofia/logo.png",
       "featuredImg": "/projects/emmasofia/macbook.png",
+      "gallery": [
+        "/projects/emmasofia/macbook.png",
+        "/projects/emmasofia/boxes.jpg"
+      ],
       "link": "https://emmasofia.no",
       "linkText": "emmasofia.no",
       "tags": [
@@ -37,11 +41,7 @@
         "Shopify",
         "AirTable"
       ],
-      "content": "\nNew unified styleguide, new websites and integration with their existing shopify web shop into their new webpage. I also made a Node.js server to connect different microservices like PayPal and AirTable to make a new automatic member system.\n",
-      "gallery": [
-        "/projects/emmasofia/macbook.png",
-        "/projects/emmasofia/boxes.jpg"
-      ]
+      "content": "\nNew unified styleguide, new websites and integration with their existing shopify web shop into their new webpage. I also made a Node.js server to connect different microservices like PayPal and AirTable to make a new automatic member system.\n"
     },
     {
       "path": "public/projects/gro.md",
@@ -50,31 +50,29 @@
       "ingress": "Growing spices in a container in Oslo",
       "thumbnail": "/projects/gro/logo.jpg",
       "featuredImg": "/projects/gro/gro.jpg",
-      "link": "https://gro-hydrokultur.firebaseapp.com",
-      "linkText": "See the (original) web page here",
-      "tags": [
-        "Branding",
-        "Web development"
-      ],
-      "content": "",
       "gallery": [
         "/projects/gro/gro.jpg",
         "/projects/gro/gro-2.jpg",
         "/projects/gro/gro-3.jpg",
         "/projects/gro/logo.jpg"
       ],
-      "images": [
-        "/projects/gro/gro.jpg",
-        "/projects/gro/logo.jpg"
-      ]
+      "link": "https://gro-hydrokultur.firebaseapp.com",
+      "linkText": "See the (original) web page here",
+      "tags": [
+        "Branding",
+        "Web development"
+      ],
+      "content": ""
     },
     {
       "path": "public/projects/hedwig.md",
       "title": "Hedwig",
       "slug": "hedwig",
-      "ingress": "A new design system for Norways postal service",
+      "ingress": "New design system for Posten (The Norwegian Postal Service).",
       "thumbnail": "/projects/hedwig/logo.png",
-      "content": ""
+      "link": "https://hedwig-docs.herokuapp.com/bring.html#/",
+      "linkText": "See the designsystem",
+      "content": "\nPosten wanted a holistic design system to make it easier to maintain their visual identity when they develop new services. I was one of the main developers from Netlife Design creating the design system. We worked closely with the designers at Posten to implement components in CSS and JS.\n"
     },
     {
       "path": "public/projects/hofbauer.md",
@@ -92,6 +90,9 @@
       "ingress": "New websites made for Kontrakt Lawyer firm",
       "thumbnail": "/projects/kontrakt/logo-white.png",
       "featuredImg": "/projects/kontrakt/macbook2.png",
+      "gallery": [
+        "/projects/kontrakt/macbook2.png"
+      ],
       "backgroundColor": "#1a488d",
       "tags": [
         "Brand",
@@ -99,10 +100,7 @@
         "Vue.js",
         "GraphQL"
       ],
-      "content": "",
-      "gallery": [
-        "/projects/kontrakt/macbook2.png"
-      ]
+      "content": ""
     },
     {
       "path": "public/projects/minioya.md",
@@ -111,13 +109,18 @@
       "ingress": "Festival app for a kids festival",
       "thumbnail": "/projects/minioya/logo.jpg",
       "featuredImg": "/projects/minioya/iphone2.jpg",
-      "link": "https://appadvice.com/app/mini-ya-2016/1097859367",
-      "linkText": "Appadvice",
-      "content": "\nBringing your kids to a festival can be stressful enough, before you even start thinking about navigating the festival area. To make it easier for parents on MiniØya to find food vendors, line-up and stage plan, as well as exit areas, I created an app together with Martine Carlson at Empefire.\n",
       "gallery": [
         "/projects/minioya/iphone2.jpg",
         "/projects/minioya/iphones.png"
-      ]
+      ],
+      "tags": [
+        "iOS",
+        "Android",
+        "Concept"
+      ],
+      "link": "https://appadvice.com/app/mini-ya-2016/1097859367",
+      "linkText": "Appadvice",
+      "content": "\nTo make it easier for parents on MiniØya to find food vendors, line-up and stage plan, as well as exit areas, I created an app together with Martine Carlson at Empefire.\n"
     },
     {
       "path": "public/projects/nabobudet.md",
@@ -136,7 +139,7 @@
       "linkText": "See on Github",
       "thumbnail": "/projects/ohshitgit/logo.png",
       "featuredImg": "/projects/ohshitgit/screenshot.gif",
-      "content": "\nA cli-tool I made because: git is hard: screwing up is easy, and figuring out how to fix your mistakes is fucking impossible.\n\n```bash\nnpm install -g ohshitgit\n```\n\n[![GitHub stars](https://img.shields.io/github/stars/whatthefoo/ohshitgit.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/whatthefoo/ohshitgit/stargazers/)\n"
+      "content": "\nA cli-tool I made because: git is hard: screwing up is easy, and figuring out how to fix your mistakes is fucking impossible.\n"
     },
     {
       "path": "public/projects/spent.md",
@@ -151,7 +154,7 @@
         "PWA",
         "React.js"
       ],
-      "content": ""
+      "content": "\nA web app I made to make it easier to budget when I travel.\n"
     }
   ]
 }
