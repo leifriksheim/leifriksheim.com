@@ -61,14 +61,6 @@ export default {
   z-index: 999;
 }
 
-.image-gallery__right:hover {
-  background: linear-gradient(-90deg, rgba(255, 255, 255, 0.5), transparent);
-}
-
-.image-gallery__left:hover {
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.5), transparent);
-}
-
 .image-gallery__img {
   position: absolute;
   object-fit: contain;
