@@ -33,13 +33,6 @@ export default new Router({
       meta: { title: "Portfolio" },
       component: () =>
         import(/* webpackChunkName: "about" */ "./views/Projects.vue")
-    },
-    {
-      path: "/project/:slug",
-      name: "project",
-      meta: { title: "Project" },
-      component: () =>
-        import(/* webpackChunkName: "about" */ "./views/Project.vue")
     }
   ],
   scrollBehavior(to, from, savedPosition) {

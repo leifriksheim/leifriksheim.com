@@ -100,7 +100,9 @@
         "Vue.js",
         "GraphQL"
       ],
-      "content": "\nWe worked closely together as they redefined themself, with everything from a new name to letterheads.\n"
+      "content": "\nWe worked closely together as they redefined themself, with everything from a new name to letterheads.\n",
+      "link": "https://kontrakt.netlify.com",
+      "linkText": "Visit the web site"
     },
     {
       "path": "public/projects/minioya.md",
@@ -135,14 +137,22 @@
         "/projects/nabobudet/borduher.jpg",
         "/projects/nabobudet/smash.jpg"
       ],
-      "content": "\nAs one of the creators and co-founders of Nabobudet, we developed the business we were missing ourselves. Nabobudet delivered whatever you might need (or just want) after regular supermarkets were closed, like chocolate or toilet paper.\n"
+      "content": "\nAs one of the creators and co-founders of Nabobudet, we developed the business we were missing ourselves. Nabobudet delivered whatever you might need (or just want) after regular supermarkets were closed, like chocolate or toilet paper.\n",
+      "tags": [
+        "Product development",
+        "Strategy",
+        "Design",
+        "Web shop"
+      ],
+      "link": "https://www.facebook.com/nabobudet/",
+      "linkText": "Check out what we did on facebook"
     },
     {
       "path": "public/projects/ohshitgit.md",
       "title": "Oh Shit Git!",
       "slug": "ohshitgit",
       "ingress": "A cli tool to help you unfuck your git mistakes",
-      "link": "http://github.com",
+      "link": "https://github.com/whatthefoo/ohshitgit",
       "linkText": "See on Github",
       "thumbnail": "/projects/ohshitgit/logo.png",
       "featuredImg": "/projects/ohshitgit/screenshot.gif",

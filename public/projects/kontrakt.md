@@ -4,6 +4,8 @@ slug: kontrakt
 ingress: Creating a brand for a traditional law firm to better highlight their expertise.
 thumbnail: "/projects/kontrakt/logo-white.png"
 featuredImg: "/projects/kontrakt/macbook2.png"
+link: https://kontrakt.netlify.com
+linkText: Visit the web site
 gallery:
   - "/projects/kontrakt/macbook2.png"
 backgroundColor: "#1a488d"

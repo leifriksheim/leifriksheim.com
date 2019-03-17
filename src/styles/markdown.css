@@ -1,6 +1,9 @@
+.markdown {
+  margin-top: 0;
+}
+
 .markdown p {
-  margin-top: var(--space-5);
-  margin-bottom: var(--space-5);
+  margin-top: 0;
 }
 
 .markdown h1,

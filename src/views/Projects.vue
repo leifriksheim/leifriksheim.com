@@ -17,23 +17,29 @@
             <ImageGallery v-else :images="project.gallery" />
             <Block>
               <Grid>
-                <Block>
-                  <Block full style="font-size: 1.5rem" :mt="5" :mb="4">
+                <Block :mt="6" :mb="4">
+                  <Block full style="font-size: 1.5rem">
                     <span>{{ project.title }}</span>
                     <span class="dash" />
                     <p style="color: var(--color-dark)">
                       {{ project.ingress }}
                     </p>
                   </Block>
-                  <ul class="list list--horisontal">
-                    <li class="pill" :key="tag" v-for="tag in project.tags">
-                      {{ tag }}
-                    </li>
-                  </ul>
+                  <Block v-if="project.tags" full>
+                    <ul class="list list--horisontal">
+                      <li class="pill" :key="tag" v-for="tag in project.tags">
+                        {{ tag }}
+                      </li>
+                    </ul>
+                  </Block>
                 </Block>
-                <Block>
+                <Block :mt="6">
                   <p class="markdown" v-html="html(project.content)"></p>
-                  <a v-if="project.link" class="a underline">
+                  <a
+                    v-if="project.link"
+                    :href="project.link"
+                    class="a underline"
+                  >
                     {{ project.linkText }}
                     <Icon name="arrow-up-right" />
                   </a>

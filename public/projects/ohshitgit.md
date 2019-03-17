@@ -2,7 +2,7 @@
 title: Oh Shit Git!
 slug: ohshitgit
 ingress: A cli tool to help you unfuck your git mistakes
-link: "http://github.com"
+link: https://github.com/whatthefoo/ohshitgit
 linkText: "See on Github"
 thumbnail: "/projects/ohshitgit/logo.png"
 featuredImg: "/projects/ohshitgit/screenshot.gif"
