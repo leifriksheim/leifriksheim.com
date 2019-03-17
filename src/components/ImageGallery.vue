@@ -47,7 +47,7 @@ export default {
   top: 0;
   width: 50%;
   height: 100%;
-  cursor: w-resize;
+  cursor: url("../assets/icons/arrow-left.svg"), auto;
   z-index: 999;
 }
 
@@ -57,8 +57,16 @@ export default {
   top: 0;
   width: 50%;
   height: 100%;
-  cursor: e-resize;
+  cursor: url("../assets/icons/arrow-right.svg"), auto;
   z-index: 999;
+}
+
+.image-gallery__right:hover {
+  background: linear-gradient(-90deg, rgba(255, 255, 255, 0.5), transparent);
+}
+
+.image-gallery__left:hover {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.5), transparent);
 }
 
 .image-gallery__img {
