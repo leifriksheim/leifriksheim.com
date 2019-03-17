@@ -5,7 +5,7 @@
       class="image-gallery__img"
       :class="{ 'image-gallery__img--show': index === visible }"
       :key="img"
-      :src="img"
+      v-lazy="img"
       v-for="(img, index) in images"
     />
     <div class="image-gallery__right" @click="nextImage" />
@@ -76,9 +76,15 @@ export default {
   width: 100%;
   transition: all 0.8s ease;
   opacity: 0;
+  transform: translateY(50px);
 }
 
 .image-gallery__img--show {
+  z-index: 998;
+}
+
+.image-gallery__img--show[lazy="loaded"] {
   opacity: 1;
+  transform: translateY(0px);
 }
 </style>

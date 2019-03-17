@@ -14,10 +14,27 @@ body {
 
 img {
   max-width: 100%;
+  background-color: var(--color-lighter);
 }
 
 body.preload {
   transition: none !important;
+}
+
+.lazy[lazy="loaded"] {
+  animation-name: fade-in;
+  animation-duration: 1s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 .em {

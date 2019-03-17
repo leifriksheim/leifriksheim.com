@@ -47,7 +47,7 @@
       "path": "public/projects/gro.md",
       "title": "Gro",
       "slug": "gro",
-      "ingress": "Growing spices in a container in Oslo",
+      "ingress": "Growing a brand for a container of salad and herbs in Oslo",
       "thumbnail": "/projects/gro/logo.jpg",
       "featuredImg": "/projects/gro/gro.jpg",
       "gallery": [
@@ -62,7 +62,7 @@
         "Branding",
         "Web development"
       ],
-      "content": ""
+      "content": "\nGrowing exotic spices and vegetables with hydro culture in the middle of Oslo. Together with Erling Aarones, we created their brand, complete with a design handbook and their first website.\n"
     },
     {
       "path": "public/projects/hedwig.md",
@@ -87,7 +87,7 @@
       "path": "public/projects/kontrakt.md",
       "title": "Kontrakt",
       "slug": "kontrakt",
-      "ingress": "New websites made for Kontrakt Lawyer firm",
+      "ingress": "Creating a brand for a traditional law firm to better highlight their expertise.",
       "thumbnail": "/projects/kontrakt/logo-white.png",
       "featuredImg": "/projects/kontrakt/macbook2.png",
       "gallery": [
@@ -100,7 +100,7 @@
         "Vue.js",
         "GraphQL"
       ],
-      "content": ""
+      "content": "\nWe worked closely together as they redefined themself, with everything from a new name to letterheads.\n"
     },
     {
       "path": "public/projects/minioya.md",
@@ -128,7 +128,14 @@
       "slug": "nabobudet",
       "ingress": "Making a candy delivery service in Oslo",
       "thumbnail": "/projects/nabobudet/logo.png",
-      "content": ""
+      "featuredImg": "/projects/nabobudet/sykkel.jpg",
+      "gallery": [
+        "/projects/nabobudet/nabobudet.jpg",
+        "/projects/nabobudet/parklevering.jpg",
+        "/projects/nabobudet/borduher.jpg",
+        "/projects/nabobudet/smash.jpg"
+      ],
+      "content": "\nAs one of the creators and co-founders of Nabobudet, we developed the business we were missing ourselves. Nabobudet delivered whatever you might need (or just want) after regular supermarkets were closed, like chocolate or toilet paper.\n"
     },
     {
       "path": "public/projects/ohshitgit.md",

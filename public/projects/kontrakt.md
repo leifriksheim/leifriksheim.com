@@ -1,7 +1,7 @@
 ---
 title: Kontrakt
 slug: kontrakt
-ingress: New websites made for Kontrakt Lawyer firm
+ingress: Creating a brand for a traditional law firm to better highlight their expertise.
 thumbnail: "/projects/kontrakt/logo-white.png"
 featuredImg: "/projects/kontrakt/macbook2.png"
 gallery:
@@ -13,3 +13,5 @@ tags:
   - Vue.js
   - GraphQL
 ---
+
+We worked closely together as they redefined themself, with everything from a new name to letterheads.

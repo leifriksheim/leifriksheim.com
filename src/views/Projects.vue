@@ -9,7 +9,11 @@
       <Block full :mt="7" :mb="7">
         <div v-for="(project, index) in projects" :key="index">
           <Block full :mt="5" :mb="7" v-if="project.featuredImg">
-            <img v-if="!project.gallery" :src="project.featuredImg" />
+            <img
+              class="lazy"
+              v-if="!project.gallery"
+              v-lazy="project.featuredImg"
+            />
             <ImageGallery v-else :images="project.gallery" />
             <Block>
               <Grid>
