@@ -15,17 +15,17 @@
               v-lazy="project.featuredImg"
             />
             <ImageGallery v-else :images="project.gallery" />
-            <Block>
+            <Block :mt="6">
               <Grid>
-                <Block :mt="6" :mb="4">
-                  <Block full style="font-size: 1.5rem">
+                <Block full :mb="4">
+                  <Block full style="font-size: 1.5rem;">
                     <span>{{ project.title }}</span>
                     <span class="dash" />
-                    <p style="color: var(--color-dark)">
-                      {{ project.ingress }}
-                    </p>
+                    <Block full :mt="3" style="color: var(--color-dark)">{{
+                      project.ingress
+                    }}</Block>
                   </Block>
-                  <Block v-if="project.tags" full>
+                  <Block v-if="project.tags" :mt="4" full>
                     <ul class="list list--horisontal">
                       <li class="pill" :key="tag" v-for="tag in project.tags">
                         {{ tag }}
@@ -33,7 +33,7 @@
                     </ul>
                   </Block>
                 </Block>
-                <Block :mt="6">
+                <Block>
                   <p class="markdown" v-html="html(project.content)"></p>
                   <a
                     v-if="project.link"
