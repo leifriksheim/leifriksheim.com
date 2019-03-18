@@ -3,7 +3,11 @@ title: Hedwig
 slug: hedwig
 ingress: New design system for Posten (The Norwegian Postal Service).
 thumbnail: "/projects/hedwig/logo.png"
-link: https://hedwig-docs.herokuapp.com/bring.html#/
+featuredImg: /projects/hedwig/screen.jpg
+gallery:
+  - /projects/hedwig/screen3.jpg
+  - /projects/hedwig/screen2.jpg
+link: https://hedwig-docs.herokuapp.com/posten.html#/
 linkText: See the designsystem
 ---
 

@@ -21,9 +21,9 @@
                   <Block full style="font-size: 1.5rem;">
                     <span>{{ project.title }}</span>
                     <span class="dash" />
-                    <Block full :mt="3" style="color: var(--color-dark)">{{
-                      project.ingress
-                    }}</Block>
+                    <Block full :mt="3" style="color: var(--color-dark)">
+                      {{ project.ingress }}
+                    </Block>
                   </Block>
                   <Block v-if="project.tags" :mt="4" full>
                     <ul class="list list--horisontal">
@@ -38,6 +38,7 @@
                   <a
                     v-if="project.link"
                     :href="project.link"
+                    target="_blank"
                     class="a underline"
                   >
                     {{ project.linkText }}
