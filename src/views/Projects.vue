@@ -7,8 +7,8 @@
     </Container>
     <Container>
       <Block full :mt="7" :mb="7">
-        <div v-for="(project, index) in projects" :key="index">
-          <Block full :mt="5" :mb="7" v-if="project.featuredImg">
+        <div v-for="(project, index) in sortedProjects" :key="index">
+          <Block full :mt="5" :mb="7" v-if="project.publish">
             <img
               class="lazy"
               v-if="!project.gallery"
@@ -74,6 +74,16 @@ export default {
   components: { Block, Container, Icon, ImageGallery, Grid },
   created() {
     document.body.classList.remove("inverted");
+  },
+  computed: {
+    sortedProjects() {
+      return [...this.projects].sort((a, b) => {
+        console.log(new Date(a.created));
+        return new Date(a.created).getTime() < new Date(b.created).getTime()
+          ? 1
+          : -1;
+      });
+    }
   },
   methods: {
     html(content) {

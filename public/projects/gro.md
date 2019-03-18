@@ -1,6 +1,8 @@
 ---
 title: Gro
 slug: gro
+publish: true
+created: 02/01/2019
 ingress: Growing a brand for a container of salad and herbs in Oslo
 thumbnail: "/projects/gro/logo.jpg"
 featuredImg: "/projects/gro/gro.jpg"

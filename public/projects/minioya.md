@@ -1,6 +1,8 @@
 ---
 title: MiniØya
 slug: minioya
+publish: true
+created: 10/01/2018
 ingress: Festival app for a kids festival
 thumbnail: "/projects/minioya/logo.jpg"
 featuredImg: "/projects/minioya/iphone2.jpg"

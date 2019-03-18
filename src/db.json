@@ -6,7 +6,9 @@
       "slug": "customel",
       "ingress": "A tiny Custom Element library",
       "thumbnail": "/projects/customel/logo.png",
-      "content": ""
+      "content": "",
+      "created": "01/02/2018",
+      "publish": false
     },
     {
       "path": "public/projects/embl.md",
@@ -17,7 +19,9 @@
       "featuredImg": "/projects/embl/screen2.jpg",
       "link": "https://www.nordicemblpartnership.org/#/",
       "linkText": "Visit web site",
-      "content": "\nThe Nordic EMBL Partnership for Molecular Medicine aims to address some of the biggest challenges in biomedicine today. Working closely together with Erling Aarones, we developed a lightweight website with a focus on making it easy for EMBL to maintain the content.\n"
+      "content": "\nThe Nordic EMBL Partnership for Molecular Medicine aims to address some of the biggest challenges in biomedicine today. Working closely together with Erling Aarones, we developed a lightweight website with a focus on making it easy for EMBL to maintain the content.\n",
+      "created": "02/08/2018",
+      "publish": true
     },
     {
       "path": "public/projects/emmasofia.md",
@@ -41,7 +45,9 @@
         "Shopify",
         "AirTable"
       ],
-      "content": "\nNew unified styleguide, new websites and integration with their existing shopify web shop into their new webpage. I also made a Node.js server to connect different microservices like PayPal and AirTable to make a new automatic member system.\n"
+      "content": "\nNew unified styleguide, new websites and integration with their existing shopify web shop into their new webpage. I also made a Node.js server to connect different microservices like PayPal and AirTable to make a new automatic member system.\n",
+      "created": "11/01/2018",
+      "publish": true
     },
     {
       "path": "public/projects/gro.md",
@@ -62,7 +68,9 @@
         "Branding",
         "Web development"
       ],
-      "content": "\nGrowing exotic spices and vegetables with hydro culture in the middle of Oslo. Together with Erling Aarones, we created their brand, complete with a design handbook and their first website.\n"
+      "content": "\nGrowing exotic spices and vegetables with hydro culture in the middle of Oslo. Together with Erling Aarones, we created their brand, complete with a design handbook and their first website.\n",
+      "created": "02/01/2019",
+      "publish": true
     },
     {
       "path": "public/projects/hedwig.md",
@@ -72,21 +80,38 @@
       "thumbnail": "/projects/hedwig/logo.png",
       "featuredImg": "/projects/hedwig/screen.jpg",
       "gallery": [
-        "/projects/hedwig/screen3.jpg",
-        "/projects/hedwig/screen2.jpg"
+        "/projects/hedwig/screen2.jpg",
+        "/projects/hedwig/screen3.jpg"
       ],
       "link": "https://hedwig-docs.herokuapp.com/posten.html#/",
       "linkText": "See the designsystem",
-      "content": "\nPosten wanted a holistic design system to make it easier to maintain their visual identity when they develop new services. I was one of the main developers from Netlife Design creating the design system. We worked closely with the designers at Posten to implement components in CSS and JS.\n"
+      "content": "\nPosten wanted a holistic design system to make it easier to maintain their visual identity when they develop new services. I was one of the main developers from Netlife Design creating the design system. We worked closely with the designers at Posten to implement components in CSS and JS.\n",
+      "created": "03/01/2019",
+      "tags": [
+        "CSS",
+        "HTML",
+        "Javascript",
+        "Designsystem"
+      ],
+      "publish": true
     },
     {
       "path": "public/projects/hofbauer.md",
       "title": "Hofbauer",
       "slug": "hofbauer",
-      "ingress": "A website",
+      "ingress": "Creating an easy-to-maintain one pager",
       "thumbnail": "/projects/hofbauer/logo.svg",
       "backgroundColor": "#132034",
-      "content": ""
+      "content": "\nOne pager I made for Christian Hofbauers new book Salgets Helter.\n",
+      "created": "01/02/2018",
+      "publish": false,
+      "featuredImg": "/projects/hofbauer/screen2.jpg",
+      "gallery": [
+        "/projects/hofbauer/screen2.jpg",
+        "/projects/hofbauer/screen.jpg"
+      ],
+      "link": "http://hofbauer.no/",
+      "linkText": "Visit web page"
     },
     {
       "path": "public/projects/kontrakt.md",
@@ -107,7 +132,9 @@
         "Vue.js",
         "GraphQL"
       ],
-      "content": "\nWe worked closely together as they redefined themself, with everything from a new name to letterheads.\n"
+      "content": "\nWe worked closely together as they redefined themself, with everything from a new name to letterheads.\n",
+      "created": "12/02/2018",
+      "publish": false
     },
     {
       "path": "public/projects/minioya.md",
@@ -127,7 +154,9 @@
       ],
       "link": "https://appadvice.com/app/mini-ya-2016/1097859367",
       "linkText": "Appadvice",
-      "content": "\nTo make it easier for parents on MiniØya to find food vendors, line-up and stage plan, as well as exit areas, I created an app together with Martine Carlson at Empefire.\n"
+      "content": "\nTo make it easier for parents on MiniØya to find food vendors, line-up and stage plan, as well as exit areas, I created an app together with Martine Carlson at Empefire.\n",
+      "created": "10/01/2018",
+      "publish": true
     },
     {
       "path": "public/projects/nabobudet.md",
@@ -150,7 +179,9 @@
       ],
       "link": "https://www.facebook.com/nabobudet/",
       "linkText": "Check out what we did on facebook",
-      "content": "\nAs one of the creators and co-founders of Nabobudet, we developed the business we were missing ourselves. Nabobudet delivered whatever you might need (or just want) after regular supermarkets were closed, like chocolate or toilet paper.\n"
+      "content": "\nAs one of the creators and co-founders of Nabobudet, we developed the business we were missing ourselves. Nabobudet delivered whatever you might need (or just want) after regular supermarkets were closed, like chocolate or toilet paper.\n",
+      "created": "12/03/2018",
+      "publish": true
     },
     {
       "path": "public/projects/ohshitgit.md",
@@ -161,7 +192,13 @@
       "linkText": "See on Github",
       "thumbnail": "/projects/ohshitgit/logo.png",
       "featuredImg": "/projects/ohshitgit/screenshot.gif",
-      "content": "\nA cli-tool I made because: git is hard: screwing up is easy, and figuring out how to fix your mistakes is fucking impossible.\n"
+      "content": "\nA cli-tool I made because: git is hard: screwing up is easy, and figuring out how to fix your mistakes is fucking impossible.\n",
+      "created": "01/01/2019",
+      "tags": [
+        "Node.js",
+        "CLI"
+      ],
+      "publish": true
     },
     {
       "path": "public/projects/spent.md",
@@ -171,12 +208,14 @@
       "thumbnail": "/projects/spent/logo.svg",
       "featuredImg": "/projects/spent/screen.jpg",
       "link": "https://spent.netlify.com",
-      "linkText": "Try the PWA on your phone",
+      "linkText": "Try the PWA",
       "tags": [
         "PWA",
         "React.js"
       ],
-      "content": "\nA web app I made to make it easier to budget when I travel.\n"
+      "content": "\nA web app I made to make it easier to budget when I travel. Best viewed on a phone.\n",
+      "created": "12/01/2018",
+      "publish": true
     }
   ]
 }

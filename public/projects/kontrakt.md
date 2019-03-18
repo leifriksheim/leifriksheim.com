@@ -1,6 +1,8 @@
 ---
 title: Kontrakt
 slug: kontrakt
+publish: false
+created: 12/02/2018
 ingress: Creating a brand for a traditional law firm to better highlight their expertise.
 thumbnail: "/projects/kontrakt/logo-white.png"
 featuredImg: "/projects/kontrakt/macbook2.png"

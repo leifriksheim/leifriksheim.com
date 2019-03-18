@@ -1,6 +1,8 @@
 ---
 title: EMBL
 slug: embl
+publish: true
+created: 02/08/2018
 ingress: A modern and easy web site to showcase scientific research
 thumbnail: "/projects/customel/logo.png"
 featuredImg: "/projects/embl/screen2.jpg"

@@ -1,6 +1,8 @@
 ---
 title: EmmaSofia
 slug: emmasofia
+publish: true
+created: 11/01/2018
 backgroundColor: "#ffe2ff"
 ingress: Building a unifiying web platform for a non profit
 thumbnail: "/projects/emmasofia/logo.png"
