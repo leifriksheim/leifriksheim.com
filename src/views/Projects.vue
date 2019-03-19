@@ -21,9 +21,9 @@
                   <Block full style="font-size: 1.5rem;">
                     <span>{{ project.title }}</span>
                     <span class="dash" />
-                    <Block full :mt="3" style="color: var(--color-dark)">
-                      {{ project.ingress }}
-                    </Block>
+                    <Block full :mt="3" style="color: var(--color-dark)">{{
+                      project.ingress
+                    }}</Block>
                   </Block>
                   <Block v-if="project.tags" :mt="4" full>
                     <ul class="list list--horisontal">
@@ -78,7 +78,6 @@ export default {
   computed: {
     sortedProjects() {
       return [...this.projects].sort((a, b) => {
-        console.log(new Date(a.created));
         return new Date(a.created).getTime() < new Date(b.created).getTime()
           ? 1
           : -1;

@@ -1,19 +1,29 @@
 <template>
-  <div class="image-gallery">
-    <div class="image-gallery__left" @click="prevImage" />
-    <img
-      class="image-gallery__img"
-      :class="{ 'image-gallery__img--show': index === visible }"
-      :key="img"
-      v-lazy="img"
-      v-for="(img, index) in images"
-    />
-    <div class="image-gallery__right" @click="nextImage" />
+  <div>
+    <div class="image-gallery">
+      <div class="image-gallery__left" @click="prevImage" />
+      <img
+        class="image-gallery__img"
+        :class="{ 'image-gallery__img--show': index === visible }"
+        :key="img"
+        v-lazy="img"
+        v-for="(img, index) in images"
+      />
+      <div class="image-gallery__right" @click="nextImage" />
+    </div>
+    <div class="image-gallery__mobile-toolbar">
+      <Icon name="arrow-left" @click.native="prevImage" />
+      <span>{{ visible + 1 }} / {{ images.length }}</span>
+      <Icon name="arrow-right" @click.native="nextImage" />
+    </div>
   </div>
 </template>
 
 <script>
+import Icon from "./Icon";
+
 export default {
+  components: { Icon },
   props: {
     images: Array
   },
@@ -41,11 +51,23 @@ export default {
   height: 300px;
 }
 
-@media (min-width: 800px) {
-  .image-gallery {
-    position: relative;
-    height: 600px;
-  }
+.image-gallery__mobile-toolbar {
+  width: 100%;
+  height: 20px;
+  color: black;
+  z-index: 1000;
+  margin-top: var(--space-4);
+  padding-left: var(--space-4);
+  padding-right: var(--space-4);
+  bottom: calc(var(--space-5) * -1);
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-gallery__mobile-toolbar svg {
+  font-size: 1.2em;
 }
 
 .image-gallery__left {
@@ -84,5 +106,16 @@ export default {
 
 .image-gallery__img--show[lazy="loaded"] {
   opacity: 1;
+}
+
+@media (min-width: 800px) {
+  .image-gallery {
+    position: relative;
+    height: 600px;
+  }
+
+  .image-gallery__mobile-toolbar {
+    display: none;
+  }
 }
 </style>
