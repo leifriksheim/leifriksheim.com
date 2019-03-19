@@ -6,9 +6,20 @@
       </Block>
       <Block :mt="6" :mb="7">
         <ul class="list">
-          <li><Icon name="phone" />&nbsp;&nbsp;+48 25 46 61</li>
-          <li><Icon name="mail" />&nbsp;&nbsp;riksheim.leif@gmail.com</li>
-          <li><Icon name="linkedin" />&nbsp;&nbsp;leifriksheim</li>
+          <li>
+            <Icon name="mail" />&nbsp;&nbsp;
+            <a class="a" href="mailto:riksheim.leif@gmail.com"
+              >riksheim.leif@gmail.com</a
+            >
+          </li>
+          <li>
+            <Icon name="linkedin" />&nbsp;&nbsp;
+            <a
+              class="a"
+              href="https://www.linkedin.com/in/leif-riksheim-080a9b110/"
+              >leifriksheim</a
+            >
+          </li>
         </ul>
       </Block>
     </Container>

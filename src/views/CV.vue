@@ -100,22 +100,6 @@
           </li>
         </ul>
       </Block>
-      <Block :mt="6" :mb="7">
-        <Block full :mb="4">
-          <h2 class="h5">Projects</h2>
-        </Block>
-        <ul class="cv-list">
-          <li>
-            <div>
-              <h3 class="h5">Kontrakt Lawyer Firm</h3>
-              <p>Web development / Design</p>
-            </div>
-            <div>
-              <span>2019</span>
-            </div>
-          </li>
-        </ul>
-      </Block>
     </Container>
   </div>
 </template>
