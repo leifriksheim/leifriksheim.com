@@ -20,12 +20,16 @@
       <Block :mt="5">
         <ul class="list list--horisontal">
           <li>
-            <a class="a">
+            <a href="https://github.com/leifriksheim" target="_blank" class="a">
               <Icon name="github" />
             </a>
           </li>
           <li>
-            <a class="a">
+            <a
+              href="https://www.linkedin.com/in/leif-riksheim-080a9b110/"
+              target="_blank"
+              class="a"
+            >
               <Icon name="linkedin" />
             </a>
           </li>
