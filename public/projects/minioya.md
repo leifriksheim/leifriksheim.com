@@ -17,4 +17,4 @@ link: https://appadvice.com/app/mini-ya-2016/1097859367
 linkText: Appadvice
 ---
 
-To make it easier for parents on MiniØya to find food vendors, line-up and stage plan, as well as exit areas, I created an app together with Martine Carlson at Empefire.
+To make it easier for parents on MiniØya to find food vendors, line-up and stage plan, as well as exit areas, I created an app together with [Martine Carlson](https://www.linkedin.com/in/martinecarlson/?originalSubdomain=no) at Empefire.

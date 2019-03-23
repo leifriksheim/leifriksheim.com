@@ -18,4 +18,4 @@ tags:
   - Web development
 ---
 
-Growing exotic spices and vegetables with hydro culture in the middle of Oslo. Together with Erling Aarones, we created their brand, complete with a design handbook and their first website.
+Growing exotic spices and vegetables with hydro culture in the middle of Oslo. Together with [Erling Aarønæs](https://www.instagram.com/aaronaes.studio/), we created their brand, complete with a design handbook and their first website.
