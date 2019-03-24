@@ -1,32 +1,34 @@
 {
   "projects": [
     {
-      "path": "public/projects/customel.md",
+      "path": "./public/projects/customel.md",
       "title": "Customel",
       "slug": "customel",
+      "publish": false,
+      "created": "01/02/2018",
       "ingress": "A tiny Custom Element library",
       "thumbnail": "/projects/customel/logo.png",
-      "content": "",
-      "created": "01/02/2018",
-      "publish": false
+      "content": ""
     },
     {
-      "path": "public/projects/embl.md",
+      "path": "./public/projects/embl.md",
       "title": "EMBL",
       "slug": "embl",
+      "publish": true,
+      "created": "02/08/2018",
       "ingress": "A modern and easy web site to showcase scientific research",
       "thumbnail": "/projects/customel/logo.png",
       "featuredImg": "/projects/embl/screen2.jpg",
       "link": "https://www.nordicemblpartnership.org/#/",
       "linkText": "Visit web site",
-      "content": "\nThe Nordic EMBL Partnership for Molecular Medicine aims to address some of the biggest challenges in biomedicine today. Working closely together with Erling Aarones, we developed a lightweight website with a focus on making it easy for EMBL to maintain the content.\n",
-      "created": "02/08/2018",
-      "publish": true
+      "content": "\nThe Nordic EMBL Partnership for Molecular Medicine aims to address some of the biggest challenges in biomedicine today. Working closely together with [Erling Aarønæs](https://www.instagram.com/aaronaes.studio/), we developed a lightweight website with a focus on making it easy for EMBL to maintain the content.\n"
     },
     {
-      "path": "public/projects/emmasofia.md",
+      "path": "./public/projects/emmasofia.md",
       "title": "EmmaSofia",
       "slug": "emmasofia",
+      "publish": true,
+      "created": "11/01/2018",
       "backgroundColor": "#ffe2ff",
       "ingress": "Building a unifiying web platform for a non profit",
       "thumbnail": "/projects/emmasofia/logo.png",
@@ -45,14 +47,14 @@
         "Shopify",
         "AirTable"
       ],
-      "content": "\nNew unified styleguide, new websites and integration with their existing shopify web shop into their new webpage. I also made a Node.js server to connect different microservices like PayPal and AirTable to make a new automatic member system.\n",
-      "created": "11/01/2018",
-      "publish": true
+      "content": "\nNew unified styleguide, new websites and integration with their existing shopify web shop into their new webpage. I also made a Node.js server to connect different microservices like PayPal and AirTable to make a new automatic member system.\n"
     },
     {
-      "path": "public/projects/gro.md",
+      "path": "./public/projects/gro.md",
       "title": "Gro",
       "slug": "gro",
+      "publish": true,
+      "created": "02/01/2019",
       "ingress": "Growing a brand for a container of salad and herbs in Oslo",
       "thumbnail": "/projects/gro/logo.jpg",
       "featuredImg": "/projects/gro/gro.jpg",
@@ -68,14 +70,14 @@
         "Branding",
         "Web development"
       ],
-      "content": "\nGrowing exotic spices and vegetables with hydro culture in the middle of Oslo. Together with Erling Aarones, we created their brand, complete with a design handbook and their first website.\n",
-      "created": "02/01/2019",
-      "publish": true
+      "content": "\nGrowing exotic spices and vegetables with hydro culture in the middle of Oslo. Together with [Erling Aarønæs](https://www.instagram.com/aaronaes.studio/), we created their brand, complete with a design handbook and their first website.\n"
     },
     {
-      "path": "public/projects/hedwig.md",
+      "path": "./public/projects/hedwig.md",
       "title": "Hedwig",
       "slug": "hedwig",
+      "publish": true,
+      "created": "03/01/2019",
       "ingress": "New design system for Posten (The Norwegian Postal Service).",
       "thumbnail": "/projects/hedwig/logo.png",
       "featuredImg": "/projects/hedwig/screen.jpg",
@@ -85,38 +87,38 @@
       ],
       "link": "https://hedwig-docs.herokuapp.com/posten.html#/",
       "linkText": "See the designsystem",
-      "content": "\nPosten wanted a holistic design system to make it easier to maintain their visual identity when they develop new services. I was one of the main developers from Netlife Design creating the design system. We worked closely with the designers at Posten to implement components in CSS and JS.\n",
-      "created": "03/01/2019",
       "tags": [
         "CSS",
         "HTML",
         "Javascript",
         "Designsystem"
       ],
-      "publish": true
+      "content": "\nPosten wanted a holistic design system to make it easier to maintain their visual identity when they develop new services. I was one of the main developers from Netlife Design creating the design system. We worked closely with the designers at Posten to implement components in CSS and JS.\n"
     },
     {
-      "path": "public/projects/hofbauer.md",
+      "path": "./public/projects/hofbauer.md",
       "title": "Hofbauer",
       "slug": "hofbauer",
+      "publish": false,
+      "created": "01/02/2018",
       "ingress": "Creating an easy-to-maintain one pager",
       "thumbnail": "/projects/hofbauer/logo.svg",
-      "backgroundColor": "#132034",
-      "content": "\nOne pager I made for Christian Hofbauers new book Salgets Helter.\n",
-      "created": "01/02/2018",
-      "publish": false,
       "featuredImg": "/projects/hofbauer/screen2.jpg",
       "gallery": [
         "/projects/hofbauer/screen2.jpg",
         "/projects/hofbauer/screen.jpg"
       ],
+      "backgroundColor": "#132034",
       "link": "http://hofbauer.no/",
-      "linkText": "Visit web page"
+      "linkText": "Visit web page",
+      "content": "\nOne pager I made for Christian Hofbauers new book Salgets Helter.\n"
     },
     {
-      "path": "public/projects/kontrakt.md",
+      "path": "./public/projects/kontrakt.md",
       "title": "Kontrakt",
       "slug": "kontrakt",
+      "publish": false,
+      "created": "12/02/2018",
       "ingress": "Creating a brand for a traditional law firm to better highlight their expertise.",
       "thumbnail": "/projects/kontrakt/logo-white.png",
       "featuredImg": "/projects/kontrakt/macbook2.png",
@@ -132,14 +134,14 @@
         "Vue.js",
         "GraphQL"
       ],
-      "content": "\nWe worked closely together as they redefined themself, with everything from a new name to letterheads.\n",
-      "created": "12/02/2018",
-      "publish": false
+      "content": "\nWe worked closely together as they redefined themself, with everything from a new name to letterheads.\n"
     },
     {
-      "path": "public/projects/minioya.md",
+      "path": "./public/projects/minioya.md",
       "title": "MiniØya",
       "slug": "minioya",
+      "publish": true,
+      "created": "10/01/2018",
       "ingress": "Festival app for a kids festival",
       "thumbnail": "/projects/minioya/logo.jpg",
       "featuredImg": "/projects/minioya/iphone2.jpg",
@@ -154,14 +156,14 @@
       ],
       "link": "https://appadvice.com/app/mini-ya-2016/1097859367",
       "linkText": "Appadvice",
-      "content": "\nTo make it easier for parents on MiniØya to find food vendors, line-up and stage plan, as well as exit areas, I created an app together with Martine Carlson at Empefire.\n",
-      "created": "10/01/2018",
-      "publish": true
+      "content": "\nTo make it easier for parents on MiniØya to find food vendors, line-up and stage plan, as well as exit areas, I created an app together with [Martine Carlson](https://www.linkedin.com/in/martinecarlson/?originalSubdomain=no) at Empefire.\n"
     },
     {
-      "path": "public/projects/nabobudet.md",
+      "path": "./public/projects/nabobudet.md",
       "title": "Nabobudet",
       "slug": "nabobudet",
+      "publish": true,
+      "created": "12/03/2018",
       "ingress": "Making a candy delivery service in Oslo",
       "thumbnail": "/projects/nabobudet/logo.png",
       "featuredImg": "/projects/nabobudet/sykkel.jpg",
@@ -179,31 +181,31 @@
       ],
       "link": "https://www.facebook.com/nabobudet/",
       "linkText": "Check out what we did on facebook",
-      "content": "\nAs one of the creators and co-founders of Nabobudet, we developed the business we were missing ourselves. Nabobudet delivered whatever you might need (or just want) after regular supermarkets were closed, like chocolate or toilet paper.\n",
-      "created": "12/03/2018",
-      "publish": true
+      "content": "\nAs one of the creators and co-founders of Nabobudet, we developed the business we were missing ourselves. Nabobudet delivered whatever you might need (or just want) after regular supermarkets were closed, like chocolate or toilet paper.\n"
     },
     {
-      "path": "public/projects/ohshitgit.md",
+      "path": "./public/projects/ohshitgit.md",
       "title": "Oh Shit Git!",
       "slug": "ohshitgit",
+      "publish": true,
+      "created": "01/01/2019",
       "ingress": "A cli tool to help you unfuck your git mistakes",
       "link": "https://github.com/whatthefoo/ohshitgit",
       "linkText": "See on Github",
       "thumbnail": "/projects/ohshitgit/logo.png",
       "featuredImg": "/projects/ohshitgit/screenshot.gif",
-      "content": "\nA cli-tool I made because: git is hard: screwing up is easy, and figuring out how to fix your mistakes is fucking impossible.\n",
-      "created": "01/01/2019",
       "tags": [
         "Node.js",
         "CLI"
       ],
-      "publish": true
+      "content": "\nA cli-tool I made because: git is hard: screwing up is easy, and figuring out how to fix your mistakes is fucking impossible.\n"
     },
     {
-      "path": "public/projects/spent.md",
+      "path": "./public/projects/spent.md",
       "title": "Spent",
       "slug": "spent",
+      "publish": true,
+      "created": "12/01/2018",
       "ingress": "Budgeting PWA",
       "thumbnail": "/projects/spent/logo.svg",
       "featuredImg": "/projects/spent/screen.jpg",
@@ -213,9 +215,7 @@
         "PWA",
         "React.js"
       ],
-      "content": "\nA web app I made to make it easier to budget when I travel. Best viewed on a phone.\n",
-      "created": "12/01/2018",
-      "publish": true
+      "content": "\nA web app I made to make it easier to budget when I travel. Best viewed on a phone.\n"
     }
   ]
 }
