@@ -5,7 +5,7 @@
         <h1 class="h4">I'm currently working as a freelancer</h1>
         <p>
           I have experience with
-          <em class="em">React</em>, <em class="em">Vue</em> and
+          <em class="em">React</em>, <em class="em">Vue</em>,
           <em class="em">Node.js</em> and <em class="em">Web Components</em>.
           For design I use <em class="em">Figma</em> or
           <em class="em">Sketch</em>.
