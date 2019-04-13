@@ -1,5 +1,5 @@
 ---
-title: Gro
+title: Gro grønt
 slug: gro
 publish: true
 created: 02/01/2019

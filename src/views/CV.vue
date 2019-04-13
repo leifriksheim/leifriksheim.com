@@ -2,19 +2,33 @@
   <div class="cv">
     <Container>
       <Block :mt="7">
-        <h1 class="h4">I'm currently working as a freelancer</h1>
+        <Block full :mb="6">
+          <h1 class="h4">I'm currently working as a freelancer</h1>
+        </Block>
         <p>
-          I have experience with
-          <em class="em">React</em>, <em class="em">Vue</em>,
-          <em class="em">Node.js</em> and <em class="em">Web Components</em>.
-          For design I use <em class="em">Figma</em> or
-          <em class="em">Sketch</em>.
+          I have experience with both
+          <em class="em">React</em> and <em class="em">Vue</em> for building
+          applications with state management and business logic.
+        </p>
+        <p>
+          I also enjoy building design libraries. At the moment I'm secretly in
+          love with
+          <em class="em">Web Components</em> for building long lasting
+          cross-framework UI components. I also have some experience with
+          <em class="em">Node.js</em> building stuff like
+          <em class="em">CLI's</em>, <em class="em">GraphQL servers</em>, and
+          connecting different <em class="em">Microservices</em>.
+        </p>
+
+        <p>
+          When making design sketches and wireframes I usually use
+          <em class="em">Figma</em> or <em class="em">Sketch</em>.
         </p>
         <p>
           Some of the clients I've worked with include
           <template v-for="(client, index) in clients">
             <span :key="client.link">
-              <a :href="client.link" target="_blank" class="a">
+              <a :href="client.link" target="_blank" class="a underline">
                 <em class="em">{{ client.name }}</em>
               </a>
               <span>{{ index + 1 === clients.length ? "." : ", " }}</span>
@@ -40,7 +54,7 @@
           <li>
             <div>
               <h3 class="h5">Front end designer</h3>
-              <a class="a">
+              <a class="a" href="https://netlife.com" target="_blank">
                 Netlife Design
                 <Icon name="external-link" />
               </a>
@@ -53,7 +67,11 @@
           <li>
             <div>
               <h3 class="h5">Creative Technologist</h3>
-              <a class="a">
+              <a
+                class="a"
+                href="https://en-gb.facebook.com/empefire/"
+                target="_blank"
+              >
                 Empefire
                 <Icon name="external-link" />
               </a>
@@ -66,7 +84,7 @@
           <li>
             <div>
               <h3 class="h5">Photo Journalist</h3>
-              <a class="a">
+              <a class="a" href="https://www.aktivioslo.no/" target="_blank">
                 Aktiv i Oslo
                 <Icon name="external-link" />
               </a>
@@ -86,7 +104,11 @@
           <li>
             <div>
               <h3 class="h5">Art Direction</h3>
-              <a class="a">
+              <a
+                class="a"
+                href="https://www.westerdals.no/en/programme/art-direction/"
+                target="_blank"
+              >
                 Westerdals Scool of Communcation
                 <Icon name="external-link" />
               </a>
@@ -99,7 +121,11 @@
           <li>
             <div>
               <h3 class="h5">Media and Communcation</h3>
-              <a class="a">
+              <a
+                class="a"
+                href="https://elvebakken.vgs.no/fagtilbud/kreativ-avdeling/medier-og-kommunikasjon/"
+                target="_blank"
+              >
                 Elvebakken VGS
                 <Icon name="external-link" />
               </a>
@@ -131,7 +157,6 @@ export default {
         { link: "https://www.virke.no", name: "Virke" },
         { link: "https://www.xxl.no", name: "XXL" },
         { link: "https://www.gjensidige.no", name: "Gjensidige" },
-        { link: "https://www.posten.no", name: "Posten" },
         { link: "https://www.power.no", name: "Power" },
         { link: "https://www.dfo.no", name: "Direktoratet for Økonomistyring" },
         {
