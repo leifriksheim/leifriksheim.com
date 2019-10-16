@@ -152,6 +152,7 @@ export default {
   data() {
     return {
       clients: [
+        { link: "https://www.aprila.no", name: "Aprila" },
         { link: "https://www.obos.no", name: "OBOS" },
         { link: "https://www.posten.no", name: "Posten" },
         { link: "https://www.virke.no", name: "Virke" },
