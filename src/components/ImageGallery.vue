@@ -115,7 +115,7 @@ export default {
   }
 
   .image-gallery__mobile-toolbar {
-    display: none;
+    /* display: none; */
   }
 }
 </style>
