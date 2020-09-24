@@ -65,7 +65,7 @@ import Icon from "@/components/Icon";
 import ImageGallery from "@/components/ImageGallery";
 
 export default {
-  name: "home",
+  name: "projects",
   data() {
     return {
       projects

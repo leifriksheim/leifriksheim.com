@@ -30,7 +30,7 @@ export default new Router({
     {
       path: "/projects",
       name: "projects",
-      meta: { title: "Portfolio" },
+      meta: { title: "Projects" },
       component: () =>
         import(/* webpackChunkName: "about" */ "./views/Projects.vue")
     }
