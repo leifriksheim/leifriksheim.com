@@ -2,7 +2,7 @@
   <div class="projects">
     <Container>
       <Block :mt="7">
-        <h1 class="h2">Below are some projects I've done</h1>
+        <h1 class="h1">Below are some projects I've done</h1>
       </Block>
     </Container>
     <Container>
@@ -19,11 +19,13 @@
               <Grid>
                 <Block full :mb="4">
                   <Block full style="font-size: 1.5rem;">
-                    <span>{{ project.title }}</span>
+                    <h2 class="h2" style="display: inline-block">
+                      {{ project.title }}
+                    </h2>
                     <span class="dash" />
-                    <Block full :mt="3" style="color: var(--color-dark)">{{
-                      project.ingress
-                    }}</Block>
+                    <Block full :mt="3" style="color: var(--color-dark)">
+                      {{ project.ingress }}
+                    </Block>
                   </Block>
                   <Block v-if="project.tags" :mt="4" full>
                     <ul class="list list--horisontal">
@@ -55,6 +57,7 @@
 </template>
 
 <script>
+import anime from "animejs";
 import { projects } from "@/db.json";
 import marked from "marked";
 
@@ -74,6 +77,21 @@ export default {
   components: { Block, Container, Icon, ImageGallery, Grid },
   created() {
     document.body.classList.remove("inverted");
+  },
+  mounted() {
+    var textWrapper = document.querySelector(".h1");
+    textWrapper.innerHTML = textWrapper.textContent.replace(
+      /[^\s]+/g,
+      "<span class='letter' style='display: inline-block'>$&</span>"
+    );
+
+    anime({
+      targets: ".h1 .letter",
+      opacity: [0, 1],
+      translateY: [10, 0],
+      duration: 1000,
+      delay: anime.stagger(60)
+    });
   },
   computed: {
     sortedProjects() {

@@ -2,7 +2,10 @@
   <div class="cv">
     <Container>
       <Block :mt="7">
-        <h1 class="h4">Feel free to contact me</h1>
+        <h1 class="h1">
+          Do you need to build something on the internet?
+          <br />I'll help you.
+        </h1>
       </Block>
       <Block :mt="6" :mb="7">
         <ul class="list">
@@ -27,6 +30,7 @@
 </template>
 
 <script>
+import anime from "animejs";
 import Block from "@/components/Block";
 import Container from "@/components/Container";
 import Icon from "@/components/Icon";
@@ -36,6 +40,21 @@ export default {
   components: { Block, Container, Icon },
   created() {
     document.body.classList.remove("inverted");
+  },
+  mounted() {
+    var textWrapper = document.querySelector(".h1");
+    textWrapper.innerHTML = textWrapper.textContent.replace(
+      /[^\s]+/g,
+      "<span class='letter' style='display: inline-block'>$&</span>"
+    );
+
+    anime({
+      targets: ".h1 .letter",
+      opacity: [0, 1],
+      translateY: [10, 0],
+      duration: 1000,
+      delay: anime.stagger(60)
+    });
   }
 };
 </script>

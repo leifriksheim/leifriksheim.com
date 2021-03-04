@@ -3,7 +3,7 @@
     <Container>
       <Block :mt="7">
         <Block full :mb="6">
-          <h1 class="h4">I'm currently working as a freelancer</h1>
+          <h1 class="h1">I'm currently working as a freelancer</h1>
         </Block>
         <p>
           I have experience with both
@@ -142,6 +142,7 @@
 </template>
 
 <script>
+import anime from "animejs";
 import Block from "@/components/Block";
 import Container from "@/components/Container";
 import Icon from "@/components/Icon";
@@ -169,6 +170,21 @@ export default {
   },
   created() {
     document.body.classList.remove("inverted");
+  },
+  mounted() {
+    var textWrapper = document.querySelector(".h1");
+    textWrapper.innerHTML = textWrapper.textContent.replace(
+      /[^\s]+/g,
+      "<span class='letter' style='display: inline-block'>$&</span>"
+    );
+
+    anime({
+      targets: ".h1 .letter",
+      opacity: [0, 1],
+      translateY: [10, 0],
+      duration: 1000,
+      delay: anime.stagger(60)
+    });
   }
 };
 </script>

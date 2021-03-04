@@ -40,6 +40,7 @@
 </template>
 
 <script>
+import anime from "animejs";
 import Block from "@/components/Block";
 import Container from "@/components/Container";
 import Icon from "@/components/Icon";
@@ -49,6 +50,21 @@ export default {
   components: { Container, Block, Icon },
   created() {
     document.body.classList.add("inverted");
+  },
+  mounted() {
+    var textWrapper = document.querySelector(".h1");
+    textWrapper.innerHTML = textWrapper.textContent.replace(
+      /[^\s]+/g,
+      "<span class='letter' style='display: inline-block'>$&</span>"
+    );
+
+    anime({
+      targets: ".h1 .letter",
+      opacity: [0, 1],
+      translateY: [10, 0],
+      duration: 1000,
+      delay: anime.stagger(60)
+    });
   }
 };
 </script>
