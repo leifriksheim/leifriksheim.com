@@ -20,15 +20,15 @@ export default {
 .container {
   width: 100%;
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 1200px;
 }
 
 .container.wide {
-  max-width: 1250px;
+  max-width: 1400px;
 }
 
 .container.narrow {
-  max-width: 600px;
+  max-width: 800px;
 }
 
 .container.fullHeight {

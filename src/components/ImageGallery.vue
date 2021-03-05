@@ -1,20 +1,26 @@
 <template>
-  <div>
-    <div class="image-gallery">
-      <div class="image-gallery__left" @click="prevImage" />
+  <div class="image-gallery">
+    <div ref="carousel" class="image-gallery__container">
       <img
+        :data-slide="index + 1"
         class="image-gallery__img"
-        :class="{ 'image-gallery__img--show': index === visible }"
         :key="img"
         v-lazy="img"
         v-for="(img, index) in images"
       />
-      <div class="image-gallery__right" @click="nextImage" />
     </div>
-    <div class="image-gallery__mobile-toolbar">
-      <Icon name="arrow-left" @click.native="prevImage" />
-      <span>{{ visible + 1 }} / {{ images.length }}</span>
-      <Icon name="arrow-right" @click.native="nextImage" />
+    <div class="image-gallery__toolbar">
+      <Icon
+        :class="{ disabled: activeSlide === 1 }"
+        name="arrow-left"
+        @click.native="prevImage"
+      />
+      <span>{{ activeSlide }} / {{ images.length }}</span>
+      <Icon
+        :class="{ disabled: activeSlide === images.length }"
+        name="arrow-right"
+        @click.native="nextImage"
+      />
     </div>
   </div>
 </template>
@@ -24,34 +30,61 @@ import Icon from "./Icon";
 
 export default {
   components: { Icon },
+  data: function() {
+    return {
+      activeSlide: 1
+    };
+  },
   props: {
     images: Array
   },
-  data() {
-    return {
-      visible: 0
-    };
+  mounted() {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.intersectionRatio >= 0.6) {
+          this.activeSlide = parseInt(entry.target.dataset.slide);
+        }
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: [0.1, 0.4, 0.5, 0.6, 0.7, 1.0]
+      }
+    );
+
+    setTimeout(() => {
+      [...document.querySelectorAll(".image-gallery__img")].forEach(el => {
+        observer.observe(el);
+      });
+    }, 100);
   },
   methods: {
     nextImage() {
-      this.visible =
-        this.visible === this.images.length - 1 ? 0 : this.visible + 1;
+      this.scrollTo(this.activeSlide + 1);
     },
     prevImage() {
-      this.visible =
-        this.visible === 0 ? this.images.length - 1 : this.visible - 1;
+      this.scrollTo(this.activeSlide - 1);
+    },
+    scrollTo(slideNumber) {
+      const carousel = this.$refs.carousel;
+      const item = carousel.querySelector(`[data-slide="${slideNumber}"]`);
+      if (item) carousel.scrollTo({ left: item.offsetLeft });
     }
   }
 };
 </script>
 
 <style>
-.image-gallery {
+.image-gallery__container {
   position: relative;
-  height: 300px;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+  display: flex;
+  height: 700px;
 }
 
-.image-gallery__mobile-toolbar {
+.image-gallery__toolbar {
   width: 100%;
   height: 20px;
   color: black;
@@ -66,56 +99,35 @@ export default {
   align-items: center;
 }
 
-.image-gallery__mobile-toolbar svg {
+.image-gallery__toolbar svg {
   font-size: 1.2em;
+  cursor: pointer;
 }
 
-.image-gallery__left {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 50%;
-  height: 100%;
-  cursor: url("../assets/icons/arrow-left.svg"), auto;
-  z-index: 999;
-}
-
-.image-gallery__right {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 50%;
-  height: 100%;
-  cursor: url("../assets/icons/arrow-right.svg"), auto;
-  z-index: 999;
+.image-gallery__toolbar .disabled svg {
+  opacity: 0.2;
+  cursor: initial;
 }
 
 .image-gallery__img {
-  position: absolute;
   object-fit: cover;
   margin: 0 auto;
+  flex-shrink: 0;
   height: 100%;
   width: 100%;
   transition: all 0.8s ease;
   opacity: 0;
+  scroll-snap-align: center;
 }
 
-.image-gallery__img--show {
-  z-index: 998;
-}
-
-.image-gallery__img--show[lazy="loaded"] {
+.image-gallery__img[lazy="loaded"] {
   opacity: 1;
 }
 
 @media (min-width: 800px) {
-  .image-gallery {
+  .image-gallery__container {
     position: relative;
     height: 600px;
-  }
-
-  .image-gallery__mobile-toolbar {
-    /* display: none; */
   }
 }
 </style>
