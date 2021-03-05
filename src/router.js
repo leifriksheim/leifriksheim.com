@@ -18,21 +18,20 @@ export default new Router({
       path: "/cv",
       name: "cv",
       meta: { title: "Experience" },
-      component: () => import(/* webpackChunkName: "about" */ "./views/CV.vue")
+      component: () => import(/* webpackChunkName: "cv" */ "./views/CV.vue")
     },
     {
       path: "/contact",
       name: "contact",
       meta: { title: "Contact" },
       component: () =>
-        import(/* webpackChunkName: "about" */ "./views/Contact.vue")
+        import(/* webpackChunkName: "contact" */ "./views/Contact.vue")
     },
     {
-      path: "/projects",
-      name: "projects",
-      meta: { title: "Projects" },
-      component: () =>
-        import(/* webpackChunkName: "about" */ "./views/Projects.vue")
+      path: "/work",
+      name: "work",
+      meta: { title: "Work" },
+      component: () => import(/* webpackChunkName: "work" */ "./views/Work.vue")
     }
   ],
   scrollBehavior(to, from, savedPosition) {

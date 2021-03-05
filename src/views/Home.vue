@@ -7,7 +7,7 @@
       <Block :mt="5">
         <ul class="list">
           <li>
-            <router-link to="/projects" class="a">Projects</router-link>
+            <router-link to="/work" class="a">Work</router-link>
           </li>
           <li>
             <router-link to="/cv" class="a">Experience</router-link>
