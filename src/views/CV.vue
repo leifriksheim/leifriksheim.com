@@ -38,60 +38,51 @@
       </Block>
       <Block :mt="6" :mb="7">
         <Block full :mb="4">
+          <h2 class="h5">Notable projects</h2>
+        </Block>
+        <ul class="cv-list">
+          <li v-for="(project, index) in projects" :key="index">
+            <div>
+              <h3 class="h5">{{ project.client }}</h3>
+              <a
+                v-if="project.link"
+                class="a"
+                :href="project.link"
+                target="_blank"
+              >
+                {{ project.type }}
+                <Icon name="external-link" />
+              </a>
+              <p v-else>{{ project.type }}</p>
+            </div>
+            <div>
+              <span>{{ project.year }}</span>
+            </div>
+          </li>
+        </ul>
+      </Block>
+      <Block :mt="6" :mb="7">
+        <Block full :mb="4">
           <h2 class="h5">Work</h2>
         </Block>
         <ul class="cv-list">
-          <li>
+          <li v-for="(workPlace, index) in workPlaces" :key="index">
             <div>
-              <h3 class="h5">Freelance developer</h3>
-              <p>Myself</p>
-            </div>
-            <div>
-              <span>2018 -</span>
-              <span>&nbsp;Current</span>
-            </div>
-          </li>
-          <li>
-            <div>
-              <h3 class="h5">Front end designer</h3>
-              <a class="a" href="https://netlife.com" target="_blank">
-                Netlife Design
-                <Icon name="external-link" />
-              </a>
-            </div>
-            <div>
-              <span>2017 -</span>
-              <span>&nbsp;2018</span>
-            </div>
-          </li>
-          <li>
-            <div>
-              <h3 class="h5">Creative Technologist</h3>
+              <h3 class="h5">{{ workPlace.type }}</h3>
               <a
+                v-if="workPlace.link"
                 class="a"
-                href="https://en-gb.facebook.com/empefire/"
+                :href="workPlace.link"
                 target="_blank"
               >
-                Empefire
+                {{ workPlace.name }}
                 <Icon name="external-link" />
               </a>
+              <p v-else>{{ workPlace.name }}</p>
             </div>
             <div>
-              <span>2015 -</span>
-              <span>&nbsp;2017</span>
-            </div>
-          </li>
-          <li>
-            <div>
-              <h3 class="h5">Photo Journalist</h3>
-              <a class="a" href="https://www.aktivioslo.no/" target="_blank">
-                Aktiv i Oslo
-                <Icon name="external-link" />
-              </a>
-            </div>
-            <div>
-              <span>2008 -</span>
-              <span>&nbsp;2012</span>
+              <span>{{ workPlace.from }} -</span>
+              <span>&nbsp;{{ workPlace.to }}</span>
             </div>
           </li>
         </ul>
@@ -101,38 +92,17 @@
           <h2 class="h5">Education</h2>
         </Block>
         <ul class="cv-list">
-          <li>
+          <li v-for="(school, index) in schools" :key="index">
             <div>
-              <h3 class="h5">Art Direction</h3>
-              <a
-                class="a"
-                href="https://www.westerdals.no/en/programme/art-direction/"
-                target="_blank"
-              >
-                Westerdals Scool of Communcation
+              <h3 class="h5">{{ school.type }}</h3>
+              <a class="a" :href="school.link" target="_blank">
+                {{ school.name }}
                 <Icon name="external-link" />
               </a>
             </div>
             <div>
-              <span>2012 -</span>
-              <span>&nbsp;2015</span>
-            </div>
-          </li>
-          <li>
-            <div>
-              <h3 class="h5">Media and Communcation</h3>
-              <a
-                class="a"
-                href="https://elvebakken.vgs.no/fagtilbud/kreativ-avdeling/medier-og-kommunikasjon/"
-                target="_blank"
-              >
-                Elvebakken VGS
-                <Icon name="external-link" />
-              </a>
-            </div>
-            <div>
-              <span>2008 -</span>
-              <span>&nbsp;2011</span>
+              <span>{{ school.from }} -</span>
+              <span>&nbsp;{{ school.to }}</span>
             </div>
           </li>
         </ul>
@@ -152,6 +122,79 @@ export default {
   components: { Block, Container, Icon },
   data() {
     return {
+      projects: [
+        {
+          client: "Psynapse.no",
+          type: "Web site development",
+          year: "2021",
+          link: "https://psynapse.netlify.app/"
+        },
+        {
+          client: "Core Elements",
+          type: "Open Source Design system",
+          year: "2020",
+          link: "https://core-elements.netlify.app/"
+        },
+        {
+          client: "Aprila Bank",
+          type: "Design system",
+          year: "2019",
+          link: "https://aprilabank-storybook.netlify.app/"
+        },
+        {
+          client: "Posten",
+          type: "Design system",
+          year: "2018",
+          link: "https://github.com/bring/hedwig"
+        }
+      ],
+      workPlaces: [
+        {
+          name: "Self Employed",
+          type: "Senior Frontend Developer",
+          from: "2008",
+          to: "Now",
+          link: ""
+        },
+        {
+          name: "Netlife Design",
+          type: "Front end designer",
+          from: "2017",
+          to: "2018",
+          link: "https://netlife.com/"
+        },
+        {
+          name: "Empefire",
+          type: "Creative Technologist",
+          from: "2015",
+          to: "2017",
+          link: "https://en-gb.facebook.com/empefire/"
+        },
+        {
+          name: "Aktiv i Oslo",
+          type: "Photo Journalist",
+          from: "2008",
+          to: "2012",
+          link: "https://www.aktivioslo.no/"
+        }
+      ],
+      schools: [
+        {
+          name: "Westerdals School of Communication",
+          type: "Art Direction",
+          from: "2012",
+          to: "2015",
+          link: "https://www.westerdals.no/en/programme/art-direction/"
+        },
+        {
+          name: "Elvebakken VGS",
+          type: "Media & Communication",
+          from: "2008",
+          to: "2011",
+          link:
+            "https://elvebakken.vgs.no/fagtilbud/kreativ-avdeling/medier-og-kommunikasjon/"
+        }
+      ],
       clients: [
         { link: "https://www.aprila.no", name: "Aprila" },
         { link: "https://www.obos.no", name: "OBOS" },
