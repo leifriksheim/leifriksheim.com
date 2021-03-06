@@ -81,7 +81,7 @@ export default {
   scroll-snap-type: x mandatory;
   overflow-x: auto;
   display: flex;
-  height: 700px;
+  max-height: 80vh;
 }
 
 .image-gallery__toolbar {
@@ -113,7 +113,7 @@ export default {
   object-fit: cover;
   margin: 0 auto;
   flex-shrink: 0;
-  height: 100%;
+  height: auto;
   width: 100%;
   transition: all 0.8s ease;
   opacity: 0;
@@ -127,7 +127,6 @@ export default {
 @media (min-width: 800px) {
   .image-gallery__container {
     position: relative;
-    height: 600px;
   }
 }
 </style>
