@@ -80,8 +80,9 @@ export default {
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
   overflow-x: auto;
+  overflow-y: hidden;
   display: flex;
-  max-height: 70vh;
+  max-height: 85vh;
 }
 
 .image-gallery__toolbar {
