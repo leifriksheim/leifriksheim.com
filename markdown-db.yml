@@ -2,3 +2,6 @@ collections:
   - name: "projects" # Used in routes, e.g., /admin/collections/blog
     label: "Projects" # Used in the UI
     folder: "./public/projects" # The path to the folder where the documents are stored
+  - name: "iaac" # Used in routes, e.g., /admin/collections/blog
+    label: "Iaac" # Used in the UI
+    folder: "./public/iaac-projects" # The path to the folder where the documents are stored

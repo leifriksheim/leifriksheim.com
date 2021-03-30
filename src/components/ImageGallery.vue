@@ -1,13 +1,14 @@
 <template>
   <div class="image-gallery">
     <div ref="carousel" class="image-gallery__container">
-      <img
+      <div
+        class="image-gallery__img-container"
         :data-slide="index + 1"
-        class="image-gallery__img"
-        :key="img"
-        v-lazy="img"
         v-for="(img, index) in images"
-      />
+        :key="img"
+      >
+        <img class="image-gallery__img" v-lazy="img" />
+      </div>
     </div>
     <div class="image-gallery__toolbar">
       <Icon
@@ -39,23 +40,29 @@ export default {
     images: Array
   },
   mounted() {
+    const carousel = this.$refs.carousel;
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.intersectionRatio >= 0.6) {
-          this.activeSlide = parseInt(entry.target.dataset.slide);
+        const slideNum = parseInt(entry.target.dataset.slide);
+        const isNotActiveSlide = this.activeSlide !== slideNum;
+
+        if (entry.intersectionRatio >= 0.4 && isNotActiveSlide) {
+          this.activeSlide = slideNum;
         }
       },
       {
         root: null,
         rootMargin: "0px",
-        threshold: [0.1, 0.4, 0.5, 0.6, 0.7, 1.0]
+        threshold: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1]
       }
     );
 
     setTimeout(() => {
-      [...document.querySelectorAll(".image-gallery__img")].forEach(el => {
-        observer.observe(el);
-      });
+      [...carousel.querySelectorAll(".image-gallery__img-container")].forEach(
+        el => {
+          observer.observe(el);
+        }
+      );
     }, 100);
   },
   methods: {
@@ -82,7 +89,19 @@ export default {
   overflow-x: auto;
   overflow-y: hidden;
   display: flex;
-  max-height: 85vh;
+  height: 40vh;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+@media (min-width: 800px) {
+  .image-gallery__container {
+    height: 85vh;
+  }
+}
+
+.image-gallery__container::-webkit-scrollbar {
+  display: none;
 }
 
 .image-gallery__toolbar {
@@ -110,16 +129,26 @@ export default {
   cursor: initial;
 }
 
-.image-gallery__img {
-  object-fit: cover;
-  margin: 0 auto;
+.image-gallery__img-container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
   flex-shrink: 0;
   align-self: center;
   height: intrinsic;
-  width: 100%;
+  scroll-snap-align: center;
+}
+
+.image-gallery__img {
+  margin: 0 auto;
+  background: none;
+  width: auto;
+  object-fit: contain;
+  height: 100%;
   transition: all 0.8s ease;
   opacity: 0;
-  scroll-snap-align: center;
 }
 
 .image-gallery__img[lazy="loaded"] {

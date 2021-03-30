@@ -32,6 +32,12 @@ export default new Router({
       name: "work",
       meta: { title: "Work" },
       component: () => import(/* webpackChunkName: "work" */ "./views/Work.vue")
+    },
+    {
+      path: "/iaac",
+      name: "iaac",
+      meta: { title: "IAAC" },
+      component: () => import(/* webpackChunkName: "iaac" */ "./views/IAAC.vue")
     }
   ],
   scrollBehavior(to, from, savedPosition) {
