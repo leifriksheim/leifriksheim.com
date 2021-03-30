@@ -1,7 +1,7 @@
 {
   "projects": [
     {
-      "path": "public/projects/aprila.md",
+      "path": "./public/projects/aprila.md",
       "title": "Aprila Kit",
       "slug": "aprila-kit",
       "publish": true,
@@ -25,7 +25,7 @@
       "content": "\nAprila wanted a design system to unify their applications and make frontend development more efficient between teams. I built a design system with focus on maximum lifetime expectancy by using web standards. The components are both available as a web component library with UI behaviour, but also a CSS library if developers need to customize interactive behaviour.\n"
     },
     {
-      "path": "public/projects/customel.md",
+      "path": "./public/projects/customel.md",
       "title": "Customel",
       "slug": "customel",
       "publish": false,
@@ -35,7 +35,7 @@
       "content": ""
     },
     {
-      "path": "public/projects/embl.md",
+      "path": "./public/projects/embl.md",
       "title": "EMBL",
       "slug": "embl",
       "publish": true,
@@ -48,7 +48,7 @@
       "content": "\nThe Nordic EMBL Partnership for Molecular Medicine aims to address some of the biggest challenges in biomedicine today. Working closely together with [Erling Aarønæs](https://www.instagram.com/aaronaes.studio/), we developed a lightweight website with a focus on making it easy for EMBL to maintain the content.\n"
     },
     {
-      "path": "public/projects/emmasofia.md",
+      "path": "./public/projects/emmasofia.md",
       "title": "EmmaSofia",
       "slug": "emmasofia",
       "publish": true,
@@ -74,7 +74,7 @@
       "content": "\nNew unified styleguide, new websites and integration with their existing shopify web shop into their new webpage. I also made a Node.js server to connect different microservices like PayPal and AirTable to make a new automatic member system.\n"
     },
     {
-      "path": "public/projects/gro.md",
+      "path": "./public/projects/gro.md",
       "title": "Gro grønt",
       "slug": "gro",
       "publish": true,
@@ -97,7 +97,7 @@
       "content": "\nGrowing exotic spices and vegetables with hydro culture in the middle of Oslo. Together with [Erling Aarønæs](https://www.instagram.com/aaronaes.studio/), we created their brand, complete with a design handbook and their first website.\n"
     },
     {
-      "path": "public/projects/hedwig.md",
+      "path": "./public/projects/hedwig.md",
       "title": "Hedwig",
       "slug": "hedwig",
       "publish": true,
@@ -120,7 +120,7 @@
       "content": "\nPosten wanted a holistic design system to make it easier to maintain their visual identity when they develop new services. I was one of the main developers from Netlife Design creating the design system. We worked closely with the designers at Posten to implement components in CSS and JS.\n"
     },
     {
-      "path": "public/projects/hofbauer.md",
+      "path": "./public/projects/hofbauer.md",
       "title": "Hofbauer",
       "slug": "hofbauer",
       "publish": false,
@@ -138,7 +138,7 @@
       "content": "\nOne pager I made for Christian Hofbauers new book Salgets Helter.\n"
     },
     {
-      "path": "public/projects/kontrakt.md",
+      "path": "./public/projects/kontrakt.md",
       "title": "Kontrakt",
       "slug": "kontrakt",
       "publish": false,
@@ -161,7 +161,7 @@
       "content": "\nWe worked closely together as they redefined themself, with everything from a new name to letterheads.\n"
     },
     {
-      "path": "public/projects/minioya.md",
+      "path": "./public/projects/minioya.md",
       "title": "MiniØya",
       "slug": "minioya",
       "publish": true,
@@ -183,7 +183,7 @@
       "content": "\nTo make it easier for parents on MiniØya to find food vendors, line-up and stage plan, as well as exit areas, I created an app together with [Martine Carlson](https://www.linkedin.com/in/martinecarlson/?originalSubdomain=no) at Empefire.\n"
     },
     {
-      "path": "public/projects/nabobudet.md",
+      "path": "./public/projects/nabobudet.md",
       "title": "Nabobudet",
       "slug": "nabobudet",
       "publish": true,
@@ -208,7 +208,7 @@
       "content": "\nAs one of the creators and co-founders of Nabobudet, we developed the business we were missing ourselves. Nabobudet delivered whatever you might need (or just want) after regular supermarkets were closed, like chocolate or toilet paper.\n"
     },
     {
-      "path": "public/projects/ohshitgit.md",
+      "path": "./public/projects/ohshitgit.md",
       "title": "Oh Shit Git!",
       "slug": "ohshitgit",
       "publish": true,
@@ -225,7 +225,7 @@
       "content": "\nA cli-tool I made because: git is hard: screwing up is easy, and figuring out how to fix your mistakes is fucking impossible.\n"
     },
     {
-      "path": "public/projects/spent.md",
+      "path": "./public/projects/spent.md",
       "title": "Spent",
       "slug": "spent",
       "publish": true,
@@ -244,7 +244,7 @@
   ],
   "iaac": [
     {
-      "path": "public/iaac-projects/drawings.md",
+      "path": "./public/iaac-projects/drawings.md",
       "title": "Drawings",
       "slug": "drawings",
       "publish": true,
@@ -268,7 +268,7 @@
       "content": "\nDrawings I have made over the years.\n"
     },
     {
-      "path": "public/iaac-projects/envision.md",
+      "path": "./public/iaac-projects/envision.md",
       "title": "Envision Festival",
       "slug": "envision",
       "publish": true,
@@ -293,7 +293,7 @@
       "content": "\nI was on a team of 5 building a theme camp for Envision Festival. We used a lot of natural materials like bamboo and drift wood to make lamps, hanging chairs, lounge areas, a bar and an entry portal.\n"
     },
     {
-      "path": "public/iaac-projects/eyecandy.md",
+      "path": "./public/iaac-projects/eyecandy.md",
       "title": "Eye Candy",
       "slug": "eye-candy",
       "publish": true,
@@ -313,7 +313,7 @@
       "content": "\nConcept development for a fashion shoot. I designed the set and made the trees myself. Photography by Pål Laukli.\n"
     },
     {
-      "path": "public/iaac-projects/ratpark.md",
+      "path": "./public/iaac-projects/ratpark.md",
       "title": "RatPark",
       "slug": "ratpark",
       "publish": true,
@@ -334,7 +334,7 @@
         "Web Components",
         "Designsystem"
       ],
-      "content": "\nI was living at Ratpark for 5 months making open source software for cooperatives. In this time I also gained experience working in the garden, building a tree house, doors and decorations for the compost toilets and much much more.\n"
+      "content": "\nI was living at Ratpark for 5 months making open source software for cooperatives. In this time I also gained experience working in the garden, building a tree house, doors and decorations for the compost toilets. I also made an organizational tool to keep track of the tools inventory, garden planning, and other project management tools.\n"
     }
   ]
 }

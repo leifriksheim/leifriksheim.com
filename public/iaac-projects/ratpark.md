@@ -20,4 +20,4 @@ tags:
   - Designsystem
 ---
 
-I was living at Ratpark for 5 months making open source software for cooperatives. In this time I also gained experience working in the garden, building a tree house, doors and decorations for the compost toilets and much much more.
+I was living at Ratpark for 5 months making open source software for cooperatives. In this time I also gained experience working in the garden, building a tree house, doors and decorations for the compost toilets. I also made an organizational tool to keep track of the tools inventory, garden planning, and other project management tools.

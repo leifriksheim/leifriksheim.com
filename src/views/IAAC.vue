@@ -4,8 +4,8 @@
       <Block :mt="7">
         <Block full :mb="6">
           <h1 class="h1">
-            Hi IAAC! Here are some things I've done that I thought might be
-            relevant for the application.
+            Hi IAAC! Here are some things I've done that might be relevant for
+            the application.
           </h1>
         </Block>
       </Block>
@@ -26,9 +26,9 @@
                       {{ project.title }}
                     </h2>
                     <span class="dash" />
-                    <Block full :mt="3" style="color: var(--color-dark)">{{
-                      project.ingress
-                    }}</Block>
+                    <Block full :mt="3" style="color: var(--color-dark)">
+                      {{ project.ingress }}
+                    </Block>
                   </Block>
                   <Block v-if="project.tags" :mt="4" full>
                     <ul class="list list--horisontal">
