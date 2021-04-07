@@ -75,7 +75,10 @@ export default {
     scrollTo(slideNumber) {
       const carousel = this.$refs.carousel;
       const item = carousel.querySelector(`[data-slide="${slideNumber}"]`);
-      if (item) carousel.scrollTo({ left: item.offsetLeft });
+      if (item) {
+        carousel.scrollTo({ left: item.offsetLeft, behavior: "smooth" });
+        this.activeSlide = slideNumber;
+      }
     }
   }
 };
