@@ -157,6 +157,13 @@ export default {
           link: ""
         },
         {
+          name: "Junto",
+          type: "Frontend lead",
+          from: "2021",
+          to: "Now",
+          link: "https://junto.foundation/"
+        },
+        {
           name: "Netlife Design",
           type: "Front end designer",
           from: "2017",
