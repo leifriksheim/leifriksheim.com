@@ -26,7 +26,7 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
-    "lint-staged": "^8.1.4",
+    "lint-staged": "^13.1.0",
     "markdown-db": "0.0.1-3",
     "postcss-for": "^2.1.1",
     "postcss-loader": "^3.0.0",
