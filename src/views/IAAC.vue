@@ -4,7 +4,7 @@
       <Block :mt="7">
         <Block full :mb="6">
           <h1 class="h1">
-            Hi IAAC! Here are some things I've done that might be relevant for
+            Hi Waking Life! Here are some things I've done that might be relevant for
             the application.
           </h1>
         </Block>
