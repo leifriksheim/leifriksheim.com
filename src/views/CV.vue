@@ -124,29 +124,41 @@ export default {
     return {
       projects: [
         {
+          client: "Flux",
+          type: "Software engineering",
+          year: "2023",
+          link: "https://fluxsocial.io/",
+        },
+        {
           client: "Psynapse.no",
           type: "Web site development",
           year: "2021",
-          link: "https://psynapse.netlify.app/"
+          link: "https://psynapse.netlify.app/",
+        },
+        {
+          client: "Psynapse.no",
+          type: "Web site development",
+          year: "2021",
+          link: "https://psynapse.netlify.app/",
         },
         {
           client: "Core Elements",
           type: "Open Source Design system",
           year: "2020",
-          link: "https://core-elements.netlify.app/"
+          link: "https://core-elements.netlify.app/",
         },
         {
           client: "Aprila Bank",
           type: "Design system",
           year: "2019",
-          link: "https://aprilabank-storybook.netlify.app/"
+          link: "https://aprilabank-storybook.netlify.app/",
         },
         {
           client: "Posten",
           type: "Design system",
           year: "2018",
-          link: "https://github.com/bring/hedwig"
-        }
+          link: "https://github.com/bring/hedwig",
+        },
       ],
       workPlaces: [
         {
@@ -154,36 +166,43 @@ export default {
           type: "Senior Frontend Developer",
           from: "2008",
           to: "Now",
-          link: ""
+          link: "",
         },
         {
-          name: "Junto",
+          name: "ADAM Layer",
+          type: "Frontend lead",
+          from: "2023",
+          to: "Now",
+          link: "https://ad4m.dev/",
+        },
+        {
+          name: "Flux",
           type: "Frontend lead",
           from: "2021",
           to: "Now",
-          link: "https://junto.foundation/"
+          link: "https://fluxsocial.io/",
         },
         {
           name: "Netlife Design",
           type: "Front end designer",
           from: "2017",
           to: "2018",
-          link: "https://netlife.com/"
+          link: "https://netlife.com/",
         },
         {
           name: "Empefire",
           type: "Creative Technologist",
           from: "2015",
           to: "2017",
-          link: "https://en-gb.facebook.com/empefire/"
+          link: "https://en-gb.facebook.com/empefire/",
         },
         {
           name: "Aktiv i Oslo",
           type: "Photo Journalist",
           from: "2008",
           to: "2012",
-          link: "https://www.aktivioslo.no/"
-        }
+          link: "https://www.aktivioslo.no/",
+        },
       ],
       schools: [
         {
@@ -191,7 +210,7 @@ export default {
           type: "Art Direction",
           from: "2012",
           to: "2015",
-          link: "https://www.westerdals.no/en/programme/art-direction/"
+          link: "https://www.westerdals.no/en/programme/art-direction/",
         },
         {
           name: "Elvebakken VGS",
@@ -199,8 +218,8 @@ export default {
           from: "2008",
           to: "2011",
           link:
-            "https://elvebakken.vgs.no/fagtilbud/kreativ-avdeling/medier-og-kommunikasjon/"
-        }
+            "https://elvebakken.vgs.no/fagtilbud/kreativ-avdeling/medier-og-kommunikasjon/",
+        },
       ],
       clients: [
         { link: "https://www.aprila.no", name: "Aprila" },
@@ -213,9 +232,9 @@ export default {
         { link: "https://www.dfo.no", name: "Direktoratet for Økonomistyring" },
         {
           link: "https://www.imdi.no",
-          name: "Integrerings- og mangfoldsdirektoratet"
-        }
-      ]
+          name: "Integrerings- og mangfoldsdirektoratet",
+        },
+      ],
     };
   },
   created() {
@@ -233,9 +252,9 @@ export default {
       opacity: [0, 1],
       translateY: [10, 0],
       duration: 1000,
-      delay: anime.stagger(60)
+      delay: anime.stagger(60),
     });
-  }
+  },
 };
 </script>
 
