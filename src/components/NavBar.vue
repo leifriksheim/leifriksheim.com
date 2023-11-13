@@ -15,26 +15,25 @@
 </template>
 
 <script>
-import Block from "@/components/Block";
-import Container from "@/components/Container";
-import { setTimeout } from "timers";
+import Block from "@/components/Block.vue";
+import Container from "@/components/Container.vue";
 
 export default {
   name: "navbar",
   components: { Container, Block },
   watch: {
-    "$route.path": function() {
+    "$route.path": function () {
       setTimeout(() => {
         this.title = this.$route.meta.title;
       }, 700);
-    }
+    },
   },
   data() {
     return {
       showMenu: false,
-      title: "Home"
+      title: "Home",
     };
-  }
+  },
 };
 </script>
 

@@ -8,15 +8,15 @@
 </template>
 
 <script>
-import NavBar from "@/components/NavBar";
+import NavBar from "@/components/NavBar.vue";
 
 export default {
   components: { NavBar },
   created() {
-    window.addEventListener("load", function() {
+    window.addEventListener("load", function () {
       document.body.classList.remove("preload");
     });
-  }
+  },
 };
 </script>
 

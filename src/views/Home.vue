@@ -41,9 +41,9 @@
 
 <script>
 import anime from "animejs";
-import Block from "@/components/Block";
-import Container from "@/components/Container";
-import Icon from "@/components/Icon";
+import Block from "@/components/Block.vue";
+import Container from "@/components/Container.vue";
+import Icon from "@/components/Icon.vue";
 
 export default {
   name: "home",
@@ -63,8 +63,8 @@ export default {
       opacity: [0, 1],
       translateY: [10, 0],
       duration: 1000,
-      delay: anime.stagger(60)
+      delay: anime.stagger(60),
     });
-  }
+  },
 };
 </script>

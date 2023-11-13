@@ -27,17 +27,17 @@
 </template>
 
 <script>
-import Icon from "./Icon";
+import Icon from "./Icon.vue";
 
 export default {
   components: { Icon },
-  data: function() {
+  data: function () {
     return {
-      activeSlide: 1
+      activeSlide: 1,
     };
   },
   props: {
-    images: Array
+    images: Array,
   },
   mounted() {
     const carousel = this.$refs.carousel;
@@ -53,13 +53,13 @@ export default {
       {
         root: null,
         rootMargin: "0px",
-        threshold: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1]
+        threshold: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
       }
     );
 
     setTimeout(() => {
       [...carousel.querySelectorAll(".image-gallery__img-container")].forEach(
-        el => {
+        (el) => {
           observer.observe(el);
         }
       );
@@ -79,8 +79,8 @@ export default {
         carousel.scrollTo({ left: item.offsetLeft, behavior: "smooth" });
         this.activeSlide = slideNumber;
       }
-    }
-  }
+    },
+  },
 };
 </script>
 

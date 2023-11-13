@@ -16,20 +16,20 @@
 </template>
 
 <script>
-import Block from "./Block";
+import Block from "./Block.vue";
 
 export default {
   components: { Block },
   props: {
     backgroundColor: {
       default: "#fff",
-      type: String
+      type: String,
     },
     url: String,
     title: String,
     ingress: String,
-    slug: String
-  }
+    slug: String,
+  },
 };
 </script>
 

@@ -113,9 +113,9 @@
 
 <script>
 import anime from "animejs";
-import Block from "@/components/Block";
-import Container from "@/components/Container";
-import Icon from "@/components/Icon";
+import Block from "@/components/Block.vue";
+import Container from "@/components/Container.vue";
+import Icon from "@/components/Icon.vue";
 
 export default {
   name: "home",
@@ -123,6 +123,12 @@ export default {
   data() {
     return {
       projects: [
+        {
+          client: "Raiz",
+          type: "Parametric Design for prototype",
+          year: "2023",
+          link: "https://www.raiz.farm/farmwall",
+        },
         {
           client: "Flux",
           type: "Software engineering",
@@ -162,29 +168,22 @@ export default {
       ],
       workPlaces: [
         {
-          name: "Self Employed",
-          type: "Senior Frontend Developer",
-          from: "2008",
-          to: "Now",
-          link: "",
-        },
-        {
-          name: "ADAM Layer",
-          type: "Frontend lead",
+          name: "Coasys",
+          type: "Senior Frontend lead",
           from: "2023",
           to: "Now",
-          link: "https://ad4m.dev/",
+          link: "https://coasys.org/",
         },
         {
           name: "Flux",
-          type: "Frontend lead",
+          type: "Senior Frontend lead",
           from: "2021",
           to: "Now",
           link: "https://fluxsocial.io/",
         },
         {
           name: "Netlife Design",
-          type: "Front end designer",
+          type: "Frontend designer",
           from: "2017",
           to: "2018",
           link: "https://netlife.com/",
@@ -206,19 +205,25 @@ export default {
       ],
       schools: [
         {
+          name: "IAAC - Institute for Advanced Architecture of Catalonia",
+          type: "Master – Advanced Ecological Buildings and Biocities ",
+          from: "2021",
+          to: "2022",
+          link: "https://iaac.net/educational-programmes/masters-programmes/master-in-advanced-ecological-buildings-maeb/",
+        },
+        {
           name: "Westerdals School of Communication",
-          type: "Art Direction",
+          type: "Bachelor – Art Direction",
           from: "2012",
           to: "2015",
-          link: "https://www.westerdals.no/en/programme/art-direction/",
+          link: "https://www.kristiania.no/studier/bachelor/art-direction/",
         },
         {
           name: "Elvebakken VGS",
           type: "Media & Communication",
           from: "2008",
           to: "2011",
-          link:
-            "https://elvebakken.vgs.no/fagtilbud/kreativ-avdeling/medier-og-kommunikasjon/",
+          link: "https://elvebakken.vgs.no/fagtilbud/kreativ-avdeling/medier-og-kommunikasjon/",
         },
       ],
       clients: [

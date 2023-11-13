@@ -4,8 +4,8 @@
       <Block :mt="7">
         <Block full :mb="6">
           <h1 class="h1">
-            Hi Waking Life! Here are some things I've done that might be relevant for
-            the application.
+            Hi Waking Life! Here are some things I've done that might be
+            relevant for the application.
           </h1>
         </Block>
       </Block>
@@ -21,7 +21,7 @@
             <Block :mt="6">
               <Grid>
                 <Block full :mb="4">
-                  <Block full style="font-size: 1.5rem;">
+                  <Block full style="font-size: 1.5rem">
                     <h2 class="h2" style="display: inline-block">
                       {{ project.title }}
                     </h2>
@@ -62,19 +62,19 @@
 <script>
 import anime from "animejs";
 import marked from "marked";
-import ImageGallery from "@/components/ImageGallery";
+import ImageGallery from "@/components/ImageGallery.vue";
 import { iaac } from "@/db.json";
-import Block from "@/components/Block";
-import Grid from "@/components/Grid";
-import Container from "@/components/Container";
-import Icon from "@/components/Icon";
+import Block from "@/components/Block.vue";
+import Grid from "@/components/Grid.vue";
+import Container from "@/components/Container.vue";
+import Icon from "@/components/Icon.vue";
 
 export default {
   name: "home",
   components: { Block, Grid, Container, Icon, ImageGallery },
   data() {
     return {
-      iaacProjects: iaac
+      iaacProjects: iaac,
     };
   },
   created() {
@@ -83,7 +83,7 @@ export default {
   methods: {
     html(content) {
       return marked(content);
-    }
+    },
   },
   computed: {
     sortedProjects() {
@@ -92,7 +92,7 @@ export default {
           ? 1
           : -1;
       });
-    }
+    },
   },
   mounted() {
     var textWrapper = document.querySelector(".h1");
@@ -106,9 +106,9 @@ export default {
       opacity: [0, 1],
       translateY: [10, 0],
       duration: 1000,
-      delay: anime.stagger(60)
+      delay: anime.stagger(60),
     });
-  }
+  },
 };
 </script>
 

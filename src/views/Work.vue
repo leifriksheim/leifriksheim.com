@@ -18,7 +18,7 @@
             <Block :mt="6">
               <Grid>
                 <Block full :mb="4">
-                  <Block full style="font-size: 1.5rem;">
+                  <Block full style="font-size: 1.5rem">
                     <h2 class="h2" style="display: inline-block">
                       {{ project.title }}
                     </h2>
@@ -61,17 +61,17 @@ import anime from "animejs";
 import { projects } from "@/db.json";
 import marked from "marked";
 
-import Block from "@/components/Block";
-import Grid from "@/components/Grid";
-import Container from "@/components/Container";
-import Icon from "@/components/Icon";
-import ImageGallery from "@/components/ImageGallery";
+import Block from "@/components/Block.vue";
+import Grid from "@/components/Grid.vue";
+import Container from "@/components/Container.vue";
+import Icon from "@/components/Icon.vue";
+import ImageGallery from "@/components/ImageGallery.vue";
 
 export default {
   name: "projects",
   data() {
     return {
-      projects
+      projects,
     };
   },
   components: { Block, Container, Icon, ImageGallery, Grid },
@@ -90,7 +90,7 @@ export default {
       opacity: [0, 1],
       translateY: [10, 0],
       duration: 1000,
-      delay: anime.stagger(60)
+      delay: anime.stagger(60),
     });
   },
   computed: {
@@ -100,12 +100,12 @@ export default {
           ? 1
           : -1;
       });
-    }
+    },
   },
   methods: {
     html(content) {
       return marked(content);
-    }
-  }
+    },
+  },
 };
 </script>

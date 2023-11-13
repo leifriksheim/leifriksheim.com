@@ -6,39 +6,40 @@ Vue.use(Router);
 
 export default new Router({
   mode: "history",
-  base: process.env.BASE_URL,
   routes: [
     {
       path: "/",
       name: "home",
       component: Home,
-      meta: { title: "Home" }
+      meta: { title: "Home" },
     },
     {
       path: "/cv",
       name: "cv",
       meta: { title: "Experience" },
-      component: () => import(/* webpackChunkName: "cv" */ "./views/CV.vue")
+      component: () => import(/* webpackChunkName: "cv" */ "./views/CV.vue"),
     },
     {
       path: "/contact",
       name: "contact",
       meta: { title: "Contact" },
       component: () =>
-        import(/* webpackChunkName: "contact" */ "./views/Contact.vue")
+        import(/* webpackChunkName: "contact" */ "./views/Contact.vue"),
     },
     {
       path: "/work",
       name: "work",
       meta: { title: "Work" },
-      component: () => import(/* webpackChunkName: "work" */ "./views/Work.vue")
+      component: () =>
+        import(/* webpackChunkName: "work" */ "./views/Work.vue"),
     },
     {
       path: "/iaac",
       name: "iaac",
       meta: { title: "IAAC" },
-      component: () => import(/* webpackChunkName: "iaac" */ "./views/IAAC.vue")
-    }
+      component: () =>
+        import(/* webpackChunkName: "iaac" */ "./views/IAAC.vue"),
+    },
   ],
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
@@ -46,5 +47,5 @@ export default new Router({
     } else {
       return { x: 0, y: 0 };
     }
-  }
+  },
 });
